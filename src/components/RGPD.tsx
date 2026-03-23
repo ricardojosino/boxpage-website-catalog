@@ -32,7 +32,7 @@ export default function RGPD() {
         >
           <div className="bg-card/95 backdrop-blur-xl border border-border p-6 rounded-2xl shadow-2xl shadow-black/50 overflow-hidden relative">
             <div className="absolute top-0 left-0 w-2 h-full bg-primary" />
-            
+
             <div className="flex flex-col gap-4 pl-2">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-primary/10 rounded-lg text-primary">
@@ -40,14 +40,14 @@ export default function RGPD() {
                 </div>
                 <h4 className="font-bold text-sm tracking-tight uppercase">Privacidade & Cookies</h4>
               </div>
-              
+
               <p className="text-xs text-muted-foreground leading-relaxed">
                 Utilizamos cookies para melhorar a sua experiência no nosso catálogo. Ao continuar a navegar, aceita a nossa {' '}
-                <Link href="/privacidade" className="text-primary hover:underline font-semibold underline-offset-4 decoration-primary/30 transition-all">
+                <Link href="https://boxpage.pt/privacidade" target="_blanck" className="text-primary hover:underline font-semibold underline-offset-4 decoration-primary/30 transition-all">
                   Política de Privacidade
                 </Link>.
               </p>
-              
+
               <div className="flex justify-end gap-3 mt-2">
                 <button
                   onClick={handleAccept}

@@ -10,7 +10,7 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
-  
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
@@ -43,17 +43,18 @@
 }
 
 :root {
-  --background: oklch(0.05 0 0); /* Quase preto para vibe dark premium por padrão */
+  --background: oklch(0.05 0 0);
+  /* Quase preto para vibe dark premium por padrão */
   --foreground: oklch(0.98 0 0);
   --card: oklch(0.08 0 0);
   --card-foreground: oklch(0.98 0 0);
   --popover: oklch(0.08 0 0);
   --popover-foreground: oklch(0.98 0 0);
-  
+
   /* Cor Primária: #16A9FA - Convertido para oklch aprox: oklch(0.68 0.16 235) */
   --primary: oklch(0.68 0.16 235);
   --primary-foreground: oklch(0.05 0 0);
-  
+
   --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.98 0 0);
   --muted: oklch(0.15 0 0);
@@ -72,6 +73,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     /* Tipografia Adaptativa Regra Geral para corpo (theme.md 43-44) */
@@ -84,7 +86,7 @@
   .boxed-container {
     @apply w-full px-4 xl:px-0 max-w-[1160px] mx-auto;
   }
-  
+
   .full-container {
     @apply w-full px-4 xl:px-0;
   }

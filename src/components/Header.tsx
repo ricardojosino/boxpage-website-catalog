@@ -33,7 +33,7 @@ export default function Header() {
           <input
             type="text"
             placeholder="Pesquisar por nome ou código..."
-            className="w-full h-10 pl-10 pr-4 rounded-full bg-secondary border-none focus:ring-2 focus:ring-primary text-sm transition-all"
+            className="w-full h-10 pl-10 pr-4 rounded-full bg-secondary/40 border border-white/10 hover:border-white/20 focus:bg-secondary/60 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 text-sm transition-all placeholder:text-muted-foreground/50"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -69,7 +69,7 @@ export default function Header() {
             <input
               type="text"
               placeholder="Pesquisar modelos..."
-              className="w-full h-12 pl-10 pr-4 rounded-xl bg-secondary border-none focus:ring-2 focus:ring-primary text-base"
+              className="w-full h-12 pl-10 pr-4 rounded-xl bg-secondary/40 border border-white/10 focus:bg-secondary/60 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 text-base placeholder:text-muted-foreground/50"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
