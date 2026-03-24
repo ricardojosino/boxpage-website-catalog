@@ -1,11 +1,14 @@
 import stylesData from '@/data/styles.json'
 import StyleCard from '@/components/StyleCard'
 import Stepper from '@/components/Stepper'
+import { Suspense } from 'react'
 
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-8 py-0">
-      <Stepper />
+      <Suspense fallback={<div className="h-24" />}>
+        <Stepper />
+      </Suspense>
 
       {/* Hero Section / Orientation */}
       <section className="boxed-container py-8 xl:py-12">

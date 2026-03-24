@@ -9,7 +9,7 @@ import { notFound, useParams } from 'next/navigation'
 import OrderModal from '@/components/OrderModal'
 import Toast from '@/components/Toast'
 import Stepper from '@/components/Stepper'
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 
 export default function ModelDetailPage() {
   const params = useParams()
@@ -33,7 +33,9 @@ export default function ModelDetailPage() {
 
   return (
     <div className="flex flex-col gap-12 py-0">
-      <Stepper />
+      <Suspense fallback={<div className="h-24" />}>
+        <Stepper />
+      </Suspense>
 
       {/* Main Content Detail */}
       <section className="boxed-container grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20">

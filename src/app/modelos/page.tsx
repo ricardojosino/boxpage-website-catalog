@@ -4,6 +4,7 @@ import ModelCard from '@/components/ModelCard'
 import Stepper from '@/components/Stepper'
 import Link from 'next/link'
 import { ArrowLeft, Search } from 'lucide-react'
+import { Suspense } from 'react'
 
 interface ModelosPageProps {
   searchParams: Promise<{
@@ -42,7 +43,9 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
 
   return (
     <div className="flex flex-col gap-12 py-0">
-      <Stepper />
+      <Suspense fallback={<div className="h-24" />}>
+        <Stepper />
+      </Suspense>
 
       {/* Header / Nav Section */}
       <section className="boxed-container flex flex-col md:flex-row items-center justify-between gap-6 border-b border-border pb-12">
@@ -62,17 +65,19 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
       {/* Grid Section */}
       <section className="boxed-container min-h-[400px]">
         {filteredModels.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
-            {filteredModels.map((site: any) => (
-              <ModelCard
-                key={site.id}
-                id={site.id}
-                title={site.title}
-                legend={site.legend}
-                image={site.image}
-              />
-            ))}
-          </div>
+          <Suspense fallback={<div>Carregando modelos...</div>}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
+              {filteredModels.map((site: any) => (
+                <ModelCard
+                  key={site.id}
+                  id={site.id}
+                  title={site.title}
+                  legend={site.legend}
+                  image={site.image}
+                />
+              ))}
+            </div>
+          </Suspense>
         ) : (
           <div className="flex flex-col items-center justify-center py-24 gap-6 bg-card/50 rounded-3xl border border-dashed border-border text-center px-6">
             <div className="p-6 rounded-full bg-secondary text-muted-foreground">
