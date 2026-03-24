@@ -1,0 +1,21 @@
+import StyleCard from '@/components/StyleCard'
+import stylesData from '@/data/styles.json'
+
+export default function StyleGridSection() {
+  return (
+    <section className="boxed-container">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-12">
+        {stylesData.map((style: any) => (
+          <StyleCard 
+            key={style.id}
+            id={style.id}
+            title={style.title}
+            legend={style.legend}
+            audience={style.audience}
+            image={style.image}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}

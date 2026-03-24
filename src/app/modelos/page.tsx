@@ -1,10 +1,10 @@
-import stylesData from '@/data/styles.json'
 import sitesData from '@/data/sites.json'
-import ModelCard from '@/components/ModelCard'
+import stylesData from '@/data/styles.json'
 import Stepper from '@/components/Stepper'
-import Link from 'next/link'
-import { ArrowLeft, Search } from 'lucide-react'
-import { Suspense } from 'react'
+import ModelosHeaderSection from './ModelosHeaderSection'
+import ModelosGridSection from './ModelosGridSection'
+
+export const dynamic = 'force-dynamic'
 
 interface ModelosPageProps {
   searchParams: Promise<{
@@ -42,76 +42,15 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
   }
 
   return (
-    <div className="flex flex-col gap-12 py-0">
-      <Suspense fallback={<div className="h-24" />}>
-        <Stepper />
-      </Suspense>
+    <div className="flex flex-col gap-12 py-10">
+      <Stepper currentStep={2} styleId={styleIdStr} />
 
-      {/* Header / Nav Section */}
-      <section className="boxed-container flex flex-col md:flex-row items-center justify-between gap-6 border-b border-border pb-12">
-        <div className="flex flex-col gap-4 max-w-2xl text-center md:text-left">
+      <ModelosHeaderSection
+        filterTitle={filterTitle}
+        filterContext={filterContext}
+      />
 
-          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight">
-            {filterTitle}
-          </h1>
-
-          <div className="flex items-center gap-3 justify-center md:justify-start">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary/60">{filterContext || "Galeria de Sites"}</span>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Grid Section */}
-      <section className="boxed-container min-h-[400px]">
-        {filteredModels.length > 0 ? (
-          <Suspense fallback={<div>Carregando modelos...</div>}>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
-              {filteredModels.map((site: any) => (
-                <ModelCard
-                  key={site.id}
-                  id={site.id}
-                  title={site.title}
-                  legend={site.legend}
-                  image={site.image}
-                />
-              ))}
-            </div>
-          </Suspense>
-        ) : (
-          <div className="flex flex-col items-center justify-center py-24 gap-6 bg-card/50 rounded-3xl border border-dashed border-border text-center px-6">
-            <div className="p-6 rounded-full bg-secondary text-muted-foreground">
-              <Search className="h-10 w-10" />
-            </div>
-            <div className="max-w-md">
-              <h2 className="text-xl font-bold mb-2">Ops! Nenhum modelo encontrado</h2>
-              <p className="text-muted-foreground text-sm">
-                Não conseguimos encontrar modelos para "{searchStr || styleIdStr}". Tente pesquisar por outro nome ou explore outros estilos.
-              </p>
-            </div>
-            <Link href="/" className="px-8 py-3 bg-primary text-primary-foreground font-bold rounded-xl hover:brightness-110 active:scale-95 transition-all">
-              Voltar ao Início
-            </Link>
-          </div>
-        )}
-      </section>
-
-      {/* Context info for styles */}
-      {styleIdStr && !searchStr && (
-        <section className="boxed-container py-12 border-t border-border">
-          <div className="p-8 rounded-2xl bg-primary/5 border border-primary/10 flex flex-col md:flex-row items-center gap-8">
-            <div className="flex flex-col gap-2 grow">
-              <h4 className="font-bold text-lg">💡 Sabia que pode mudar de estilo?</h4>
-              <p className="text-sm text-muted-foreground leading-relaxed max-w-xl">
-                Estes modelos representam o estilo selecionado, mas podemos adaptar qualquer interface para as suas necessidades específicas. Sinta-se à vontade para explorar outras vibes.
-              </p>
-            </div>
-            <Link href="/" className="px-6 py-3 border border-primary/20 hover:bg-primary/10 text-primary font-bold rounded-xl transition-all whitespace-nowrap">
-              Mudar de Estilo
-            </Link>
-          </div>
-        </section>
-      )}
+      <ModelosGridSection filteredModels={filteredModels} />
     </div>
   )
 }

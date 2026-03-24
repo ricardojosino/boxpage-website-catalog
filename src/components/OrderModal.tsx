@@ -83,7 +83,7 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
           <style jsx global>{`
             .premium-scrollbar::-webkit-scrollbar {
               width: 5px;
@@ -123,7 +123,7 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
                 className="absolute top-6 right-6 flex items-center gap-2 pl-4 pr-3 py-2 bg-white hover:bg-white/90 text-black border-none rounded-full shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all z-30 group"
                 title="Fechar Formulário"
               >
-                <span className="text-[10px] font-black tracking-widest uppercase mb-[1px]">Fechar</span>
+                <span className="text-[10px] font-black tracking-widest uppercase mb-px">Fechar</span>
                 <X className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </button>
             )}

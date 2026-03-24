@@ -11,7 +11,7 @@ import {
   value,
   hr,
   footer
-} from '@/components/emails/EmailLayout';
+} from '@/components/EmailLayout';
 import {
   Heading,
   Section,

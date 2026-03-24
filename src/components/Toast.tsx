@@ -28,7 +28,7 @@ export default function Toast({ isVisible, message, onClose, duration = 3000 }: 
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-          className="fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] flex items-center gap-3 px-6 py-4 bg-[#1c1c1c] border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] min-w-[320px]"
+          className="fixed bottom-10 left-1/2 -translate-x-1/2 z-200 flex items-center gap-3 px-6 py-4 bg-[#1c1c1c] border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] min-w-[320px]"
         >
           <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/20 text-primary shrink-0">
             <CheckCircle2 className="h-6 w-6" />

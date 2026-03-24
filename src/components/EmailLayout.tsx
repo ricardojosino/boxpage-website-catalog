@@ -40,7 +40,7 @@ export const main = {
 export const container = {
   backgroundColor: '#ffffff',
   margin: '0 auto',
-  padding: '40px',
+  padding: '16px',
   borderRadius: '8px',
   maxWidth: '600px',
   width: '100%',

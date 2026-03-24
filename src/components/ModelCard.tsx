@@ -27,12 +27,12 @@ export default function ModelCard({ id, title, legend, image }: ModelCardProps) 
     >
       <Link href={detailUrl} className="flex flex-col h-full">
         {/* Screenshot 1.91:1 */}
-        <div className="relative aspect-[1.91/1] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+        <div className="relative aspect-[1.91/1] overflow-hidden transition-all duration-700">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-cover transition-transform duration-500 "
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
           />
           <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -43,10 +43,7 @@ export default function ModelCard({ id, title, legend, image }: ModelCardProps) 
         </div>
 
         <div className="p-6 flex flex-col gap-2">
-          <div className="flex items-center gap-2 text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1 group-hover:text-primary transition-colors">
-            <Globe className="h-3 w-3" />
-            <span>Modelo Profissional</span>
-          </div>
+
           <h3 className="text-xl font-bold tracking-tight">
             {title}
           </h3>

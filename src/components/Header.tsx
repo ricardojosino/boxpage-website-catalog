@@ -19,7 +19,7 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-[100] w-full border-b border-border bg-background shadow-sm">
+    <header className="sticky top-0 z-100 w-full border-b border-border bg-background shadow-sm">
       {/* Desktop Header Content (>= 1200px) */}
       <div className="hidden xl:flex boxed-container h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
@@ -71,7 +71,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="xl:hidden fixed inset-0 top-16 z-[90] bg-background flex flex-col p-6 animate-in slide-in-from-top duration-300">
+        <div className="xl:hidden fixed inset-0 top-16 z-90 bg-background flex flex-col p-6 animate-in slide-in-from-top duration-300">
           <div className="flex flex-col gap-8 h-full">
             <form onSubmit={handleSearch} className="relative w-full">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-primary" />

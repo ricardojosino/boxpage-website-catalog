@@ -1,164 +1,35 @@
 [
   {
-    "id": 101, "style_id": 1, "title": "Axioma Médica", "legend": "Rigor científico e autoridade.", "description": "O modelo Axioma foi desenvolvido para profissionais que não abrem mão da seriedade e do rigor científico. Com uma estética inspirada em ambientes médicos de alta performance, este layout utiliza o Branco Absoluto e o Azul Marinho para criar uma atmosfera de confiança imediata e assepsia visual.\n\nCada seção foi estrategicamente posicionada para elevar o status do profissional: desde o Hero focado na presença clínica até a exibição de certificações e tecnologia de ponta. A tipografia geométrica (Inter/Roboto) garante uma leitura clara e moderna, ideal para quem deseja ser reconhecido como uma referência inquestionável na sua especialidade. É a escolha ideal para dermatologistas e médicos que transformam vidas através da ciência e da técnica avançada.", "image": "/images/screenshot.jpg", "typography": "Inter & Roboto", "vibe": "Técnica e Rigorosa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
+    "id": 127834,
+    "style_id": 1,
+    "title": "Axioma",
+    "legend": "Design cirúrgico e tecnológico focado em transmitir segurança e higiene. O padrão ouro para médicos que priorizam a confiança e o prestígio clínico.",
+    "description": "O modelo Axioma foi desenvolvido para profissionais que não abrem mão da seriedade e do rigor científico. Com uma estética inspirada em ambientes médicos de alta performance, este layout utiliza o Branco Absoluto e o Azul Marinho para criar uma atmosfera de confiança imediata e assepsia visual. Cada seção foi estrategicamente posicionada para elevar o status do profissional: desde o Hero focado na presença clínica até a exibição de certificações e tecnologia de ponta. A tipografia geométrica (Inter/Roboto) garante uma leitura clara e moderna, ideal para quem deseja ser reconhecido como uma referência inquestionável na sua especialidade. É a escolha ideal para dermatologistas e médicos que transformam vidas através da ciência e da técnica avançada.",
+    "image": "/images/screenshot-axioma.jpg",
+    "typography": "Totalmente sans-serif, geométrica e minimalista, desenhada para garantir a máxima legibilidade e transmitir uma sensação de rigor técnico, precisão e modernidade absoluta.",
+    "vibe": "Segurança, ciência e higiene. Uma estética de assepsia visual e alta performance clínica, onde a sobriedade dos tons frios e a organização impecável projetam uma autoridade inquestionável e um prestígio médico de excelência.",
+    "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
   },
   {
-    "id": 102, "style_id": 1, "title": "Dermatologia Prime", "legend": "Focado em estética clínica especializada.", "description": "Este modelo Prime redefine a presença digital da dermatologia moderna, unindo a precisão do diagnóstico clínico à sofisticação da estética avançada. O design prioriza espaços em branco generosos, transmitindo uma sensação de higiene profunda e organização impecável, essenciais para clínicas de prestígio em Portugal.\n\nA navegação fluida guia o paciente através dos procedimentos mais inovadores, utilizando uma tipografia Playfair Display para títulos que evocam elegância e autoridade médica. Cada detalhe visual foi pensado para destacar a segurança dos protocolos clínicos, sendo a escolha perfeita para especialistas que pretendem atrair um público que valoriza a ciência aliada ao cuidado estético de topo.", "image": "/images/screenshot.jpg", "typography": "Playfair Display & Inter", "vibe": "Confiança Médica e Elegância", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
+    "id": 323456,
+    "style_id": 2,
+    "title": "Prana",
+    "legend": "Uma experiência visual orgânica e imersiva. Desenhado para terapeutas que transformam o atendimento num ritual de pausa, cura e conexão profunda.",
+    "description": "O modelo Prana foi concebido para ser a extensão digital de um refúgio de paz. Focado na filosofia do respiro, este layout utiliza uma estrutura minimalista e fluida que guia o visitante por uma jornada de relaxamento antes mesmo da primeira consulta. Cada seção foi planeada para elevar o valor do toque e da atmosfera: desde a apresentação poética dos rituais de assinatura até à galeria focada nos detalhes que tornam o espaço único. Com uma tipografia que equilibra a elegância clássica e a leveza moderna, o Prana elimina o ruído visual, criando um ambiente onde o conteúdo respira. É a escolha ideal para massoterapeutas e profissionais do bem-estar que desejam projetar uma imagem de serenidade, cuidado artesanal e revitalização.",
+    "image": "/images/screenshot-prana.jpg",
+    "typography": "Equilíbrio perfeito entre a elegância clássica de uma fonte serifada para títulos e a leveza moderna de uma tipografia sans-serif no corpo de texto, garantindo uma leitura descansada, clara e sofisticada.",
+    "vibe": "Respira e relaxa. Uma atmosfera orgânica e imersiva que privilegia a luz natural, as texturas da terra e o silêncio visual, convidando o utilizador a uma jornada imediata de pausa, cura e regeneração profunda.",
+    "link": "https://boxpage-website-catalog--bem-estar-zen--prana.vercel.app/"
   },
   {
-    "id": 103, "style_id": 1, "title": "Cardio Care", "legend": "Segurança e dinamismo em cardiologia.", "description": "O modelo Cardio Care projeta uma imagem de solidez e resposta rápida, fundamentais para a cardiologia de excelência. Através de um layout estruturado e cores que transmitem vitalidade e segurança, o site posiciona a clínica como um centro de diagnóstico por imagem de referência tecnológica.\n\nA estrutura editorial permite uma exposição clara de exames complexos, utilizando infografias visuais que facilitam a compreensão do paciente. É um design robusto que privilegia o profissionalismo absoluto, ideal para hospitais privados e centros de cardiologia que operam na vanguarda da medicina diagnóstica em grandes centros urbanos.", "image": "/images/screenshot.jpg", "typography": "Roboto Condensed & Open Sans", "vibe": "Rigor Diagnóstico e Vitalidade", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 104, "style_id": 1, "title": "Ortho Advanced", "legend": "Especializado em ortopedia e fisioterapia.", "description": "Concebido para transmitir força, precisão e recuperação eficaz, o modelo Ortho Advanced é a solução digital para ortopedistas e centros de fisioterapia de alta performance. O design utiliza linhas retas e uma organização modular que espelha a eficiência dos tratamentos cirúrgicos e de reabilitação.\n\nA tipografia Geist traz um toque contemporâneo e tecnológico ao site, enquanto a disposição das seções enfatiza a rápida recuperação e o retorno à mobilidade. É a ferramenta ideal para profissionais que comunicam resultados baseados em técnica avançada e desejam converter pacientes através de uma presença digital resiliente e altamente profissional.", "image": "/images/screenshot.jpg", "typography": "Geist Sans & Mono", "vibe": "Precisão e Reabilitação", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 105, "style_id": 1, "title": "Gastro Center", "legend": "Simplicidade e eficácia no atendimento.", "description": "O modelo Gastro Center foca na clareza absoluta da informação, eliminando distrações para priorizar o agendamento e a explicação direta de especialidades digestivas. O design é leve e funcional, transmitindo calma e ordem, fundamentais para reduzir a ansiedade do paciente antes de exames clínicos.\n\nCom uma tipografia Open Sans otimizada para leitura em dispositivos móveis, este layout garante que o conteúdo informativo seja o grande protagonista. É a escolha estratégica para gastroenterologistas e clínicas que desejam um site prático, assepsiado e altamente eficiente na conversão de novos pacientes.", "image": "/images/screenshot.jpg", "typography": "Open Sans & Lato", "vibe": "Clareza Funcional e Calma", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 106, "style_id": 1, "title": "Neuro Precision", "legend": "Alta tecnologia aliada à medicina.", "description": "Refletindo a vanguarda técnica dos centros de neurologia modernos, o modelo Neuro Precision utiliza uma estética futurista e minimalista para comunicar complexidade com clareza. O layout é limpo e organizado, evocando a precisão necessária para o diagnóstico e tratamento de patologias do sistema nervoso.\n\nA combinação de Montserrat com tons frios de cinza e azul cria um ambiente de status tecnológico e rigor científico inquestionável. É o padrão ideal para neurocirurgiões e centros de investigação clínica que pretendem destacar a sua liderança técnica através de uma interface digital que respira inovação e inteligência médica.", "image": "/images/screenshot.jpg", "typography": "Montserrat & Ubuntu", "vibe": "Inovação e Rigor Tecnológico", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 107, "style_id": 1, "title": "Pediatra Amigo", "legend": "Confiança para toda a família.", "description": "O Pediatra Amigo equilibra o rigor científico exigido pela medicina com um toque de empatia e segurança familiar. O design é sóbrio e profissional, evitando excessos infantis para manter a perceção de autoridade clínica perante os pais, mas mantendo formas suaves e cores acolhedoras.\n\nA tipografia Lato garante uma comunicação próxima e acessível, enquanto a estrutura do site foca no acompanhamento próximo e na prevenção. É o modelo definitivo para clínicas pediátricas que desejam ser reconhecidas como parceiras de longo prazo no crescimento saudável das crianças, transmitindo confiança inabalável em cada seção.", "image": "/images/screenshot.jpg", "typography": "Lato & Quicksand", "vibe": "Segurança e Confiança Familiar", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 108, "style_id": 1, "title": "Oftalmo Vision", "legend": "A visão clara da sua saúde ocular.", "description": "Focado na nitidez e na tecnologia visual, o modelo Oftalmo Vision destaca os equipamentos de ponta de centros oftalmológicos de referência. O layout utiliza contrastes nítidos e uma organização geométrica que espelha a precisão das cirurgias oculares a laser modernas.\n\nCada elemento visual foi projetado para transmitir clareza absoluta, utilizando uma tipografia Ubuntu moderna e direta. É a escolha ideal para médicos oftalmologistas que pretendem destacar a excelência dos seus diagnósticos e atrair pacientes que valorizam a segurança de uma estrutura clínica de vanguarda tecnológica.", "image": "/images/screenshot.jpg", "typography": "Ubuntu & Roboto", "vibe": "Nitidez e Precisão Óptica", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 109, "style_id": 1, "title": "Uro Clinic Portugal", "legend": "Discrição e profissionalismo absoluto.", "description": "O modelo Uro Clinic foi desenvolvido com foco na discrição, no profissionalismo e na abordagem direta de temas sensíveis na urologia e andrologia. O design é sóbrio e minimalista, transmitindo uma atmosfera de respeito e assepsia visual que favorece a confiança imediata do paciente masculino.\n\nA estrutura informativa prioriza o acesso rápido a tratamentos e protocolos de segurança, utilizando uma tipografia Sans-serif clássica e tons de azul profundo. É a ferramenta digital ideal para especialistas que desejam consolidar uma presença online séria, ética e focada em resultados clínicos de excelência no mercado português.", "image": "/images/screenshot.jpg", "typography": "Inter & Open Sans", "vibe": "Discrição e Rigor Clínico", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 201, "style_id": 2, "title": "Serenidade Terapia", "legend": "Explore o equilíbrio interior.", "description": "O modelo Serenidade Terapia é um verdadeiro santuário digital, desenhado para profissionais que fazem da harmonia e do equilíbrio o seu propósito de vida. Com uma estética inspirada na calma da natureza, este layout utiliza tons terra e texturas suaves para envolver o utilizador numa experiência de profunda serenidade.\n\nCada seção convida à reconexão interior, desde o Hero focado na respiração guiada até a exibição de terapias holísticas relaxantes. A tipografia Lora/Merriweather garante uma leitura fluida e orgânica, ideal para quem deseja ser reconhecido como um porto seguro de bem-estar. É a escolha perfeita para terapeutas que transformam vidas através da presença e do equilíbrio emocional.", "image": "/images/screenshot.jpg", "typography": "Lora & Merriweather", "vibe": "Orgânica e Serena", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 202, "style_id": 2, "title": "Zen Aura", "legend": "Harmonia e paz em cada detalhe.", "description": "Evocando a aura de um refúgio de paz, este modelo Zen foi criado para envolver o utilizador numa jornada de descompressão absoluta. O design minimalista e as imagens de espaços abertos criam uma sensação de liberdade e renovação espiritual desde o primeiro segundo no site.\n\nA navegação é propositadamente lenta e fluida, permitindo que a mensagem de renovação ganhe destaque. Com uma tipografia Cormorant que exala classe e leveza, este layout é o padrão de excelência para professores de meditação e centros de retiro que pretendem atrair alunos focados no autoconhecimento e na paz profunda.", "image": "/images/screenshot.jpg", "typography": "Cormorant Garamond & Lato", "vibe": "Espiritual e Minimalista", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 203, "style_id": 2, "title": "Pura Calma SPA", "legend": "Relaxe profundamente no agora.", "description": "Um design que respira harmonia, utilizando tons terrosos e uma tipografia suave para convidar o cliente a um momento de descompressão. Ideal para spas urbanos e clínicas de massoterapia que desejam uma presença digital acolhedora e minimalista.", "image": "/images/screenshot.jpg", "typography": "Lato & Merriweather", "vibe": "Orgânica, Fluida, Sereno", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-     "id": 204, "style_id": 2, "title": "Equilíbrio Yoga", "legend": "Pratique a sua melhor versão.", "description": "Leveza visual para instrutores de yoga e bem-estar físico. Design minimalista focado na facilidade de marcação e apresentação de serviços de bem-estar.", "image": "/images/screenshot.jpg", "typography": "Raleway", "vibe": "Leve", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-     "id": 205, "style_id": 2, "title": "Sopro de Vida", "legend": "Meditação guiada para a mente ativa.", "description": "Minimalismo extremo focado na redução do ruído digital. Uma experiência visual de profunda serenidade.", "image": "/images/screenshot.jpg", "typography": "Nunito", "vibe": "Mínima", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-     "id": 206, "style_id": 2, "title": "Terapia Holística LX", "legend": "A cura através da energia natural.", "description": "Layout fluido para diversas especialidades de medicina alternativa. Transmite calma e harmonia em cada detalhe.", "image": "/images/screenshot.jpg", "typography": "Cormorant", "vibe": "Energizada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-     "id": 207, "style_id": 2, "title": "Mundo Ayurveda", "legend": "Conhecimento milenar no presente.", "description": "Cores quentes e fontes clássicas para centros ayurvédicos experientes. Fomenta a reconexão orgânica.", "image": "/images/screenshot.jpg", "typography": "Libre Baskerville", "vibe": "Clássica", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-     "id": 208, "style_id": 2, "title": "Flow & Balance", "legend": "Mantenha o seu ritmo natural.", "description": "Design moderno para pilates e reeducação postural suave. Ideal para instrutores que valorizam a fluidez.", "image": "/images/screenshot.jpg", "typography": "Quicksand", "vibe": "Fluida", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-     "id": 209, "style_id": 2, "title": "Essência Zen", "legend": "O silêncio que o seu corpo precisa.", "description": "Focado em rituais de banho e massagens de assinatura. Santuário digital de descompressão absoluta.", "image": "/images/screenshot.jpg", "typography": "Spectral", "vibe": "Silenciosa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 301, "style_id": 3, "title": "Vogue Derma Luxe", "legend": "Sofisticação máxima para estética avançada.", "description": "A personificação do requinte e da exclusividade no mercado da beleza avançada. O modelo Vogue Derma Luxe foi projetado para elevar o valor percebido de cada procedimento, comunicando uma autoridade estética que se assemelha às grandes publicações de moda internacionais.\n\nO uso assertivo de tons de ouro e preto matte em contraste com espaços editorializados cria uma atmosfera de prestígio inquestionável. A tipografia Bodoni garante um toque aristocrático e moderno, sendo a escolha definitiva para clínicas de luxo que não vendem apenas tratamentos, mas sim a arte de esculpir a identidade com absoluta sofisticação.", "image": "/images/screenshot.jpg", "typography": "Bodoni & Futura", "vibe": "Exclusiva e Editorial", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 302, "style_id": 3, "title": "Royal Clinic", "legend": "O prestígio da estética real.", "description": "Design inspirado em palácios modernos para clínicas de harmonização facial premium. Cada pixel comunica exclusividade e alto valor percebido.", "image": "/images/screenshot.jpg", "typography": "Playfair Display", "vibe": "Sofisticada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 303, "style_id": 3, "title": "Icon Clinic", "legend": "Torne-se a sua melhor versão icónica.", "description": "Layout focado no status e no resultado final de excelência. Ideal para quem deseja ser uma referência icónica em beleza avançada.", "image": "/images/screenshot.jpg", "typography": "Outfit", "vibe": "Icónica", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 304, "style_id": 3, "title": "Golden Skin", "legend": "Brilhe com exclusividade absoluta.", "description": "Uso de dourado e sombras suaves para vender altos resultados. Elevando o padrão da estética de luxo digital.", "image": "/images/screenshot.jpg", "typography": "Prata", "vibe": "Luxuosa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 305, "style_id": 3, "title": "Diamond Esthetics", "legend": "A perfeição esculpida para si.", "description": "Geometria limpa e preto fosco para clínicas selecionadas. Arte aplicada aos tratamentos de pele mais seletivos.", "image": "/images/screenshot.jpg", "typography": "Futura", "vibe": "Prestigiosa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 306, "style_id": 3, "title": "Elegance Care", "legend": "Onde a ciência encontra a arte.", "description": "Abordagem sofisticada para procedimentos de rejuvenescimento. Transmite autoridade estética inquestionável.", "image": "/images/screenshot.jpg", "typography": "Cinzel", "vibe": "Artística", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 307, "style_id": 3, "title": "Onyx Premium", "legend": "Beleza profunda e misteriosa.", "description": "Design dark premium focado no mercado masculino de luxo. Atmosfera de prestígio em cada detalhe visual.", "image": "/images/screenshot.jpg", "typography": "Bebas Neue", "vibe": "Intensa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 308, "style_id": 3, "title": "Velvet Aesthetics", "legend": "O toque suave do luxo clínico.", "description": "Layout minimalista editorial para clínicas boutique que exigem seletividade e sofisticação.", "image": "/images/screenshot.jpg", "typography": "Inter", "vibe": "Seletiva", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 309, "style_id": 3, "title": "Privé Studio", "legend": "Atendimento à porta fechada.", "description": "O auge da exclusividade digital para serviços de beleza avançada de elite. Atendimento especializado privado.", "image": "/images/screenshot.jpg", "typography": "Outfit", "vibe": "Privada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 401, "style_id": 4, "title": "Mente Equilibrada", "legend": "Porto seguro para a sua alma.", "description": "A essência da empatia traduzida em pixels. O modelo Mente Equilibrada foi criado para ser o porto seguro digital dos seus pacientes, onde a escuta ativa e o suporte emocional ganham forma através de uma estética acolhedora e tons pêssego/azul suavizados.\n\nCada seção foi pensada para reduzir a ansiedade e promover o conforto, desde a introdução humanizada até o formulário de contacto simplificado e seguro. A tipografia Nunito reforça a proximidade e o acompanhamento próximo, tornando-o a escolha definitiva para psicólogos que colocam o bem-estar mental e a humanidade no centro da sua prática clínica.", "image": "/images/screenshot.jpg", "typography": "Nunito & Source Sans Pro", "vibe": "Empática e Acolhedora", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 402, "style_id": 4, "title": "Espaço Seguro Psi", "legend": "Escuta ativa e cuidado emocional.", "description": "Cores suaves e formas orgânicas para psicólogos clínicos experientes. Transmite imediata segurança em crises.", "image": "/images/screenshot.jpg", "typography": "Source Sans Pro", "vibe": "Confortável", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 403, "style_id": 4, "title": "Apoio & Evolução", "legend": "Caminhe com companhia especializada.", "description": "Design humanizado focado em crescimento pessoal e terapia próxima. Fomenta o desenvolvimento emocional seguro.", "image": "/images/screenshot.jpg", "typography": "Work Sans", "vibe": "Humanizada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 404, "style_id": 4, "title": "Círculo de Confiança", "legend": "Terapia que conecta e transforma.", "description": "Ideal para terapia de grupo e mediação familiar. Atmosfera de segurança e escuta mútua.", "image": "/images/screenshot.jpg", "typography": "Rubik", "vibe": "Circular", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 405, "style_id": 4, "title": "Mente Serena Blog", "legend": "Artigos que cuidam do seu eu.", "description": "Layout focado em leitura confortável e partilha de saber emocional. Design fluida e acolhedor.", "image": "/images/screenshot.jpg", "typography": "Crimson Text", "vibe": "Informativa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 406, "style_id": 4, "title": "Sinergia Psicológica", "legend": "Unindo ciência e humanidade.", "description": "Abordagem integrada para diversas áreas da saúde mental. Foco no acompanhamento terapêutico atento.", "image": "/images/screenshot.jpg", "typography": "Varela Round", "vibe": "Sinergética", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 407, "style_id": 4, "title": "Raízes do Equilíbrio", "legend": "Funde-se com a sua essência.", "description": "Design leve com tons pêssego focado na terapia infantil e juvenil. Segurança desde a primeira sessão.", "image": "/images/screenshot.jpg", "typography": "Fredoka", "vibe": "Suave", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 408, "style_id": 4, "title": "Pouso de Paz", "legend": "Para quando a vida pesa.", "description": "O refúgio digital para momentos de crise moderada. Transmite conforto imediato e profunda humanidade.", "image": "/images/screenshot.jpg", "typography": "Cabin", "vibe": "Estável", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 409, "style_id": 4, "title": "Guia Interior", "legend": "Ilumine o seu caminho mental.", "description": "Focado no coaching e desenvolvimento humano sustentável. Uma estética que promove a cura e a escuta.", "image": "/images/screenshot.jpg", "typography": "Public Sans", "vibe": "Guiada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 501, "style_id": 5, "title": "Vibe Nails", "legend": "Dinamismo e energia urbana.", "description": "A energia da beleza moderna traduzida num design magnético e de alto impacto. O modelo Vibe Nails foi desenhado para profissionais que vivem ao ritmo das últimas tendências e da agilidade contemporânea, transformando o seu portfólio no centro das atenções.\n\nInspirado em interfaces de apps mobile, o site utiliza cores pop e tipografias dinâmicas para gerar prova social imediata e facilitar agendamentos. É a escolha perfeita para quem deseja projetar uma imagem fresca, vibrante e conectada com a vanguarda do estilo urbano digital.", "image": "/images/screenshot.jpg", "typography": "Poppins & Archivo", "vibe": "Vibrante e Tecnológica", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 502, "style_id": 5, "title": "Glow Bar", "legend": "Onde o Neon encontra a beleza.", "description": "Design estilo APP focado em prova social e agilidade total. Cores vibrantes e layout magnético contemporâneo.", "image": "/images/screenshot.jpg", "typography": "Archivo", "vibe": "Energética", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 503, "style_id": 5, "title": "Depil Fast", "legend": "Beleza rápida e sem dor.", "description": "Transmite agilidade contemporânea para centros de depilação ágil. Estilo limpo mas vibrante com foco em resultados.", "image": "/images/screenshot.jpg", "typography": "Inter", "vibe": "Ágil", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 504, "style_id": 5, "title": "Lash Master Studio", "legend": "O olhar que domina as ruas.", "description": "Focado em transformar o olhar com exclusividade pop-art moderna. Design de alto impacto para lash artists.", "image": "/images/screenshot.jpg", "typography": "Space Grotesk", "vibe": "Destaque", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 505, "style_id": 5, "title": "Urban Barber", "legend": "Estilo que define a vanguarda.", "description": "Cores pop sobre fundo branco para barbearias premium de rua. Atitude urbana traduzida em estética moderna.", "image": "/images/screenshot.jpg", "typography": "Oswald", "vibe": "Urbana", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 506, "style_id": 5, "title": "Pop Beauty", "legend": "O seu brilho diário e digital.", "description": "Layout magnético que incentiva o agendamento visual dinâmico. Energia da beleza traduzida em agilidade.", "image": "/images/screenshot.jpg", "typography": "Fira Sans", "vibe": "Magnética", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 507, "style_id": 5, "title": "Color Spot", "legend": "Pinte o seu mundo com cor.", "description": "Especialista em coloração capilar vibrante e tendências. Mostra energia e agilidade do mercado de beleza.", "image": "/images/screenshot.jpg", "typography": "Kanit", "vibe": "Colorida", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 508, "style_id": 5, "title": "Next Gen Beauty", "legend": "A próxima geração da beleza.", "description": "Minimalismo hi-tech para salões de beleza vibrantes. Interface intuitiva estilo aplicação móvel.", "image": "/images/screenshot.jpg", "typography": "Barlow", "vibe": "Hi-Tech", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 509, "style_id": 5, "title": "Creative Ink", "legend": "Arte aplicada à estética visual.", "description": "Ideal para estúdios criativos que vivem de tendências pop. Energia urbana magnética e atraente.", "image": "/images/screenshot.jpg", "typography": "Catamaran", "vibe": "Criativa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 601, "style_id": 6, "title": "Centro Vita", "legend": "Cuidado completo para a sua família.", "description": "A excelência do cuidado multidisciplinar reunida num único espaço digital de alta performance. O modelo Centro Vita projeta a robustez e a solidez de uma infraestrutura clínica completa, onde a organização por departamentos e a sinergia da equipa são as grandes protagonistas.\n\nIdeal para centros de saúde que acolhem toda a família, o design oferece uma navegação intuitiva que transmite clareza e confiança global. A tipografia Outfit reforça a solidez institucional, sendo o padrão de referência para clínicas que oferecem uma vasta gama de serviços com uma organização impecável.", "image": "/images/screenshot.jpg", "typography": "Outfit & Georama", "vibe": "Sólida e Estruturada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercelapp/"
-  },
-  {
-    "id": 602, "style_id": 6, "title": "Pilar Clínico", "legend": "A base da sua saúde integrada.", "description": "Organização por departamentos e foco na equipa médica multidisciplinar. Design robusto para centros clínicos integrais familiares.", "image": "/images/screenshot.jpg", "typography": "Plus Jakarta Sans", "vibe": "Organizada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 603, "style_id": 6, "title": "Unidade Saúde+", "legend": "Mais perto de si em cada especialidade.", "description": "Ampla rede de serviços apresentada de forma sólida e intuitiva. Mostra solidez institucional e variedade de cuidados.", "image": "/images/screenshot.jpg", "typography": "Roboto", "vibe": "Integrada", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 604, "style_id": 6, "title": "Centro Família", "legend": "Desde os pequenos aos graúdos.", "description": "Focado no atendimento pediátrico e geriátrico sinérgico. Estrutura organizada e robusta para toda a família.", "image": "/images/screenshot.jpg", "typography": "Quicksand", "vibe": "Familiar", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 605, "style_id": 6, "title": "Equipa Médica Integrada", "legend": "Excelência em cada diagnóstico.", "description": "Destaque total para a robustez da infraestrutura e competência da equipa. Transmite clareza e confiança institucional.", "image": "/images/screenshot.jpg", "typography": "IBM Plex Sans", "vibe": "Referente", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercelapp/"
-  },
-  {
-    "id": 606, "style_id": 6, "title": "Reab Centro Sul", "legend": "Volte ao seu melhor ritmo.", "description": "Sinergia entre diversas áreas clínicas para reabilitação completa. Design sólido e integrado de alta performance.", "image": "/images/screenshot.jpg", "typography": "Jost", "vibe": "Ativa", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 607, "style_id": 6, "title": "Saúde Integrada Regional", "legend": "Design para grandes infraestruturas.", "description": "Estética que transmite solidez inabalável para centros regionais. Focado na sinergia da equipa e organização departamental.", "image": "/images/screenshot.jpg", "typography": "DM Sans", "vibe": "Robusta", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercelapp/"
-  },
-  {
-    "id": 608, "style_id": 6, "title": "Multiplex Care", "legend": "Múltiplos serviços, um único cuidado.", "description": "Navegação intuitiva entre diversas áreas clínicas distintas. Projeta a robustez de uma infraestrutura clínica completa.", "image": "/images/screenshot.jpg", "typography": "Be Vietnam Pro", "vibe": "Sinergética", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
-  },
-  {
-    "id": 609, "style_id": 6, "title": "Fórum da Saúde Family", "legend": "Conhecimento que se torna bem-estar.", "description": "Design institucional premium para toda a família. Mostra uma estrutura organizada, técnica e confiável.", "image": "/images/screenshot.jpg", "typography": "Manrope", "vibe": "Institucional", "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercelapp/"
+    "id": 772301,
+    "style_id": 3,
+    "title": "Áurea",
+    "legend": "Estética de luxo com detalhes em dourado champagne e foco em resultados de alta performance para clínicas de medicina estética de elite.",
+    "description": "O modelo Áurea foi concebido para profissionais que não entregam apenas procedimentos, mas esculpem identidades. Inspirado na Proporção Áurea e no mercado de luxo internacional, este layout utiliza o contraste entre o branco pérola e o dourado champagne para elevar instantaneamente o valor percebido da marca. A estrutura é focada em converter o desejo em consulta através de uma galeria de resultados impecável e uma tabela de investimentos que seleciona o público certo. É a escolha definitiva para médicos e estetas que desejam transparecer exclusividade, rigor técnico e um padrão de beleza editorial.",
+    "image": "/images/screenshot-aurea.jpg",
+    "typography": "Combinação luxuosa de fontes serifadas de alto contraste para títulos magnéticos, equilibrada com uma tipografia sans-serif leve e moderna para garantir elegância e fluidez na leitura.",
+    "vibe": "Exclusividade extrema e luxo silencioso. Uma estética inspirada em editoriais de moda de prestígio, transmitindo autoridade estética, rigor técnico e sofisticação urbana.",
+    "link": "https://boxpage-website-catalog--estetica-premium--aurea.vercel.app/"
   }
 ]

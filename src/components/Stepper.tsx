@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import { Check, ChevronRight } from 'lucide-react'
 import Link from 'next/link'
-import { usePathname, useSearchParams } from 'next/navigation'
 
 const steps = [
   { id: 1, name: 'Estilo', label: 'Estilo', path: '/' },
@@ -11,20 +10,12 @@ const steps = [
   { id: 3, name: 'Finalizar', label: 'Escolher', path: '/modelos/' }
 ]
 
-export default function Stepper() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
+interface StepperProps {
+  currentStep: number
+  styleId?: string | null
+}
 
-  // Lógica para determinar o step atual baseado na rota
-  let currentStep = 1
-  if (pathname.includes('/modelos/')) {
-    currentStep = 3
-  } else if (pathname.includes('/modelos')) {
-    currentStep = 2
-  } else {
-    currentStep = 1
-  }
-
+export default function Stepper({ currentStep, styleId }: StepperProps) {
   const getStepStatus = (stepId: number) => {
     if (stepId < currentStep) return 'complete'
     if (stepId === currentStep) return 'active'
@@ -32,7 +23,7 @@ export default function Stepper() {
   }
 
   return (
-    <div className="w-full bg-background border-b border-white/5 pt-6 xl:pt-10 pb-4 xl:pb-6 sticky top-16 z-40 backdrop-blur-md">
+    <div className="w-full bg-background border-b border-white/5 py-4 xl:py-6 sticky top-16 xl:top-20 z-40 backdrop-blur-md">
       <div className="boxed-container">
         <nav aria-label="Progress" className="flex items-center justify-center">
           <ol className="flex items-center gap-4 sm:gap-8 xl:gap-16 w-full max-w-4xl">
@@ -40,8 +31,8 @@ export default function Stepper() {
               const status = getStepStatus(step.id)
               const isLast = index === steps.length - 1
 
-              const stepPath = step.id === 2 && searchParams.get('style')
-                ? `${step.path}?style=${searchParams.get('style')}`
+              const stepPath = step.id === 2 && styleId
+                ? `${step.path}?style=${styleId}`
                 : step.path
 
               const isClickable = status !== 'upcoming'
