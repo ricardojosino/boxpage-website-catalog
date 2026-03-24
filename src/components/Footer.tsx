@@ -10,7 +10,6 @@ export default function Footer() {
           <span className="text-xl font-bold tracking-tighter text-primary">
             BOXPAGE<span className="text-foreground">STUDIO</span>
           </span>
-          <span className="ml-4 text-xs">© {currentYear} Todos os direitos reservados.</span>
         </div>
 
         <nav className="flex items-center gap-8">

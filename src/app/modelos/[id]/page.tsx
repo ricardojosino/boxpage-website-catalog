@@ -7,6 +7,8 @@ import Link from 'next/link'
 import { ArrowLeft, CheckCircle2, Copy, ExternalLink, Sparkles, Type } from 'lucide-react'
 import { notFound, useParams } from 'next/navigation'
 import OrderModal from '@/components/OrderModal'
+import Toast from '@/components/Toast'
+import Stepper from '@/components/Stepper'
 import { useState } from 'react'
 
 export default function ModelDetailPage() {
@@ -16,6 +18,7 @@ export default function ModelDetailPage() {
   const model = sitesData.find(s => s.id === modelId)
 
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isToastVisible, setIsToastVisible] = useState(false)
 
   if (!model) {
     notFound()
@@ -23,18 +26,14 @@ export default function ModelDetailPage() {
 
   const style = stylesData.find(s => s.id === model.style_id)
 
+  const handleCopyCode = () => {
+    navigator.clipboard.writeText(`#${model.id}`)
+    setIsToastVisible(true)
+  }
+
   return (
-    <div className="flex flex-col gap-12 py-12 xl:py-24">
-      {/* Top Navigation */}
-      <section className="boxed-container">
-        <Link
-          href={`/modelos?style=${model.style_id}`}
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-medium mb-8 group"
-        >
-          <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-          Voltar para {style?.title || 'os modelos'}
-        </Link>
-      </section>
+    <div className="flex flex-col gap-12 py-0">
+      <Stepper />
 
       {/* Main Content Detail */}
       <section className="boxed-container grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20">
@@ -49,34 +48,29 @@ export default function ModelDetailPage() {
               priority
               sizes="(max-width: 1200px) 100vw, 50vw"
             />
-            <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-md border border-border px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-primary shadow-lg flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-              Visualização Ativa
-            </div>
-            <Link
-              href={model.link}
-              target="_blank"
-              className="absolute bottom-6 right-6 p-4 bg-primary text-primary-foreground rounded-full shadow-xl hover:scale-110 active:scale-95 transition-all group-hover:rotate-6 md:hidden"
-            >
-              <ExternalLink className="h-6 w-6" />
-            </Link>
+
+
           </div>
 
           <Link
             href={model.link}
             target="_blank"
-            className="w-full flex items-center justify-center gap-2 py-4 bg-secondary/50 hover:bg-primary hover:text-primary-foreground border border-border rounded-2xl font-bold transition-all group"
+            className="w-full flex items-center justify-center gap-2 py-4 bg-white text-black hover:bg-white/90 border border-transparent rounded-2xl font-black transition-all group shadow-xl"
           >
             <ExternalLink className="h-5 w-5 group-hover:rotate-12 transition-transform" />
             Ver Modelo em Tempo Real
           </Link>
 
-          <div className="flex items-center justify-between p-6 rounded-2xl bg-secondary/30 border border-border/50">
+          <div className="flex items-center justify-between p-6 rounded-2xl bg-secondary/30 border border-border/50 group/item">
             <div className="flex flex-col">
               <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Código do Modelo</span>
               <span className="text-xl font-mono font-bold text-primary">#{model.id}</span>
             </div>
-            <button title="Copiar código" className="p-3 hover:bg-secondary rounded-xl transition-colors text-muted-foreground">
+            <button
+              onClick={handleCopyCode}
+              title="Copiar código"
+              className="p-3 hover:bg-secondary rounded-xl transition-all text-muted-foreground hover:text-primary active:scale-90"
+            >
               <Copy className="h-5 w-5" />
             </button>
           </div>
@@ -98,21 +92,21 @@ export default function ModelDetailPage() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-            <div className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all flex flex-col gap-4">
-              <div className="flex items-center gap-2 text-primary">
+            <div className="p-6 rounded-2xl bg-[#1c1c1c] border border-white/10 hover:border-primary/40 transition-all flex flex-col gap-4 shadow-lg shadow-black/20">
+              <div className="flex items-center gap-2 text-primary font-bold">
                 <Type className="h-5 w-5" />
-                <span className="text-xs font-bold uppercase tracking-widest">Tipografia</span>
+                <span className="text-xs uppercase tracking-widest">Tipografia</span>
               </div>
-              <p className="text-sm font-medium leading-relaxed">
+              <p className="text-sm font-medium leading-relaxed opacity-90">
                 {model.typography}
               </p>
             </div>
-            <div className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all flex flex-col gap-4">
-              <div className="flex items-center gap-2 text-primary">
+            <div className="p-6 rounded-2xl bg-[#1c1c1c] border border-white/10 hover:border-primary/40 transition-all flex flex-col gap-4 shadow-lg shadow-black/20">
+              <div className="flex items-center gap-2 text-primary font-bold">
                 <Sparkles className="h-5 w-5" />
-                <span className="text-xs font-bold uppercase tracking-widest">A "Vibe"</span>
+                <span className="text-xs uppercase tracking-widest">A "Vibe"</span>
               </div>
-              <p className="text-sm font-medium leading-relaxed">
+              <p className="text-sm font-medium leading-relaxed opacity-90">
                 {model.vibe}
               </p>
             </div>
@@ -136,7 +130,7 @@ export default function ModelDetailPage() {
             <div className="pt-8">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="w-full sm:w-auto px-12 py-5 bg-primary text-primary-foreground font-black text-lg rounded-2xl shadow-2xl shadow-primary/20 hover:brightness-110 hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-wider"
+                className="w-full px-12 py-5 bg-primary text-primary-foreground font-black text-md md:text-lg rounded-2xl shadow-2xl shadow-primary/20 hover:brightness-110 hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-wider"
               >
                 Escolher esse modelo
               </button>
@@ -154,6 +148,13 @@ export default function ModelDetailPage() {
         onClose={() => setIsModalOpen(false)}
         model={model}
         style={style}
+      />
+
+      {/* Reusable Toast */}
+      <Toast
+        isVisible={isToastVisible}
+        message={`Código copiado com sucesso`}
+        onClose={() => setIsToastVisible(false)}
       />
     </div>
   )

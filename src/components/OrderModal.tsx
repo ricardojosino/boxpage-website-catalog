@@ -12,13 +12,14 @@ interface OrderModalProps {
     id: number
     title: string
     style_id: number
+    link: string
   }
   style?: {
     id: number
     title: string
   }
 }
-
+ 
 export default function OrderModal({ isOpen, onClose, model, style }: OrderModalProps) {
   const [step, setStep] = useState<'form' | 'success'>('form')
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
     company: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-
+ 
   // Bloquear e liberar o scroll do body conforme o modal abre e fecha
   useEffect(() => {
     if (isOpen) {
@@ -36,30 +37,47 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
     } else {
       document.body.style.overflow = 'unset'
     }
-
+ 
     // Cleanup ao desmontar
     return () => {
       document.body.style.overflow = 'unset'
     }
   }, [isOpen])
-
-  const handleSubmit = (e: React.FormEvent) => {
+ 
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simular o envio dos dados (incluindo os campos ocultos do modelo e estilo em JSON como solicitado)
+ 
     const payload = {
       ...formData,
-      style: JSON.stringify(style),
-      site: JSON.stringify(model)
+      modelId: model.id,
+      modelTitle: model.title,
+      modelLink: model.link,
+      styleTitle: style?.title,
+      catalogUrl: typeof window !== 'undefined' ? window.location.href : ''
     }
-
-    console.log('Enviando pedido:', payload)
-
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setStep('success')
-    }, 1500)
+ 
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+ 
+      if (!response.ok) {
+        throw new Error('Falha ao enviar e-mail');
+      }
+ 
+      console.log('Pedido enviado com sucesso:', payload);
+      setStep('success');
+    } catch (error) {
+      console.error('Erro ao enviar pedido:', error);
+      alert('Ocorreu um erro ao enviar o seu pedido. Por favor, tente novamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -88,7 +106,7 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="absolute inset-0 bg-black/40 backdrop-blur-md"
+            className="absolute inset-0 bg-black/60 backdrop-blur-xl"
           />
 
           {/* Modal Container */}
@@ -96,7 +114,7 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            className="relative w-full max-w-lg bg-card border border-border rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col"
+            className="relative w-full max-w-lg bg-[#1a1a1a] border border-white/10 rounded-3xl shadow-[0_25px_100px_rgba(0,0,0,0.8)] overflow-hidden max-h-[90vh] flex flex-col"
           >
             {/* Close Button - Contraste Extremo fixo no topo */}
             {step === 'form' && (
@@ -207,7 +225,7 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
                   <div className="relative h-20 w-20 rounded-full p-1 border-2 border-primary/20 shadow-xl">
                     <div className="relative h-full w-full rounded-full overflow-hidden border-2 border-background">
                       <Image
-                        src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=300"
+                        src="/images/profile-daiani-small.jpg"
                         alt="Daiani Josino"
                         fill
                         className="object-cover"
@@ -218,22 +236,22 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
                     </div>
                   </div>
                   
-                  <div className="flex flex-col gap-3 max-w-[320px]">
-                    <h2 className="text-2xl font-black tracking-tight leading-tight">Escolha recebida!</h2>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                  <div className="flex flex-col gap-3 max-w-[340px]">
+                    <h2 className="text-3xl font-black tracking-tight leading-tight">Escolha recebida!</h2>
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       Olá <span className="text-foreground font-bold">{formData.name.split(' ')[0]}</span>, registamos o seu interesse no modelo <span className="text-primary font-bold">{model.title}</span>.
                       Em breve entrarei em contacto.
                     </p>
                   </div>
 
                   <div className="flex flex-col items-center gap-0.5 py-4 border-t border-border/50 w-full mt-1">
-                    <span className="text-sm font-black tracking-tight uppercase">Daiani Josino</span>
-                    <span className="text-[9px] font-bold text-primary tracking-widest uppercase opacity-80">Atendimento Premium</span>
+                    <span className="text-base font-black tracking-tight uppercase">Daiani Josino</span>
+                    <span className="text-[10px] font-bold text-primary tracking-widest uppercase opacity-80">Atendimento Premium</span>
                   </div>
 
                   <button
                     onClick={onClose}
-                    className="w-full py-3.5 bg-secondary hover:bg-white hover:text-black font-black rounded-xl transition-all uppercase text-[9px] tracking-[0.2em] shadow-lg active:scale-95"
+                    className="w-full py-4 bg-secondary hover:bg-white hover:text-black font-black rounded-xl transition-all uppercase text-[11px] tracking-[0.2em] shadow-lg active:scale-95"
                   >
                     Fechar Janela
                   </button>

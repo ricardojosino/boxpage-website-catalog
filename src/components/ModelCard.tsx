@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Globe, ArrowRight } from 'lucide-react'
+import { useSearchParams } from 'next/navigation'
 
 interface ModelCardProps {
   id: number
@@ -13,14 +14,18 @@ interface ModelCardProps {
 }
 
 export default function ModelCard({ id, title, legend, image }: ModelCardProps) {
+  const searchParams = useSearchParams()
+  const styleId = searchParams.get('style')
+  const detailUrl = styleId ? `/modelos/${id}?style=${styleId}` : `/modelos/${id}`
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      className="group flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300"
+      className="group flex flex-col bg-[#1c1c1c] rounded-2xl border border-white/10 overflow-hidden hover:border-primary/60 hover:shadow-[0_0_30px_rgba(22,169,250,0.15)] transition-all duration-500"
     >
-      <Link href={`/modelos/${id}`} className="flex flex-col h-full">
+      <Link href={detailUrl} className="flex flex-col h-full">
         {/* Screenshot 1.91:1 */}
         <div className="relative aspect-[1.91/1] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
           <Image

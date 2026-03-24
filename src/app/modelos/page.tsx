@@ -1,8 +1,9 @@
 import stylesData from '@/data/styles.json'
 import sitesData from '@/data/sites.json'
 import ModelCard from '@/components/ModelCard'
+import Stepper from '@/components/Stepper'
 import Link from 'next/link'
-import { ArrowLeft, Search, Filter, Home } from 'lucide-react'
+import { ArrowLeft, Search } from 'lucide-react'
 
 interface ModelosPageProps {
   searchParams: Promise<{
@@ -40,14 +41,12 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
   }
 
   return (
-    <div className="flex flex-col gap-12 py-12 xl:py-20">
+    <div className="flex flex-col gap-12 py-0">
+      <Stepper />
+
       {/* Header / Nav Section */}
       <section className="boxed-container flex flex-col md:flex-row items-center justify-between gap-6 border-b border-border pb-12">
         <div className="flex flex-col gap-4 max-w-2xl text-center md:text-left">
-          <Link href="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-medium mb-4 group">
-            <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-            Voltar aos Estilos
-          </Link>
 
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight">
             {filterTitle}
@@ -58,8 +57,6 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
           </div>
 
         </div>
-
-
       </section>
 
       {/* Grid Section */}
@@ -98,7 +95,7 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
       {styleIdStr && !searchStr && (
         <section className="boxed-container py-12 border-t border-border">
           <div className="p-8 rounded-2xl bg-primary/5 border border-primary/10 flex flex-col md:flex-row items-center gap-8">
-            <div className="flex flex-col gap-2 flex-grow">
+            <div className="flex flex-col gap-2 grow">
               <h4 className="font-bold text-lg">💡 Sabia que pode mudar de estilo?</h4>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-xl">
                 Estes modelos representam o estilo selecionado, mas podemos adaptar qualquer interface para as suas necessidades específicas. Sinta-se à vontade para explorar outras vibes.

@@ -19,7 +19,7 @@ export default function StyleCard({ id, title, legend, audience, image }: StyleC
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="group relative h-full flex flex-col bg-card rounded-2xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300"
+      className="group flex flex-col bg-[#1c1c1c] rounded-2xl border border-white/10 overflow-hidden hover:border-primary/60 hover:shadow-[0_0_30px_rgba(22,169,250,0.15)] transition-all duration-500"
     >
       <Link href={`/modelos?style=${id}`} className="flex flex-col h-full">
         {/* Aspect Ratio 1.91:1 for the image */}
@@ -43,8 +43,7 @@ export default function StyleCard({ id, title, legend, audience, image }: StyleC
             <h3 className="text-2xl font-bold tracking-tight group-hover:text-primary transition-colors">
               {title}
             </h3>
-            <div className="flex items-center gap-2 text-xs font-semibold text-primary/80 uppercase tracking-widest">
-              <Users className="h-3 w-3" />
+            <div className="flex items-center gap-2 text-xs font-semibold text-primary/80 tracking-widest">
               <span>{audience}</span>
             </div>
           </div>
