@@ -6,9 +6,9 @@ import Link from 'next/link'
 import { usePathname, useSearchParams } from 'next/navigation'
 
 const steps = [
-  { id: 1, name: 'Estilo', label: 'Escolher Estilo', path: '/' },
-  { id: 2, name: 'Modelos', label: 'Ver Modelos', path: '/modelos' },
-  { id: 3, name: 'Finalizar', label: 'Escolher Modelo', path: '/modelos/' }
+  { id: 1, name: 'Estilo', label: 'Estilo', path: '/' },
+  { id: 2, name: 'Modelos', label: 'Modelos', path: '/modelos' },
+  { id: 3, name: 'Finalizar', label: 'Escolher', path: '/modelos/' }
 ]
 
 export default function Stepper() {
@@ -77,10 +77,10 @@ export default function Stepper() {
 
                     {/* Labels */}
                     <div className="flex flex-col">
-                      <span className={`text-[8px] sm:text-[10px] uppercase font-black tracking-widest leading-none ${status === 'active' ? 'text-primary' : 'text-muted-foreground'}`}>
+                      <span className={`text-[10px] sm:text-[11px] uppercase font-black tracking-widest leading-none ${status === 'active' ? 'text-primary' : 'text-muted-foreground'}`}>
                         Etapa 0{step.id}
                       </span>
-                      <span className={`text-[10px] sm:text-xs font-bold whitespace-nowrap hidden md:block ${status === 'upcoming' ? 'text-muted-foreground/50' : 'text-foreground'}`}>
+                      <span className={`text-xs sm:text-sm font-bold whitespace-nowrap ${status === 'upcoming' ? 'text-muted-foreground/50' : 'text-foreground'}`}>
                         {step.label}
                       </span>
                     </div>
