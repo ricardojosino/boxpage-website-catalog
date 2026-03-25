@@ -4,6 +4,7 @@ import stylesData from '@/data/styles.json'
 import Stepper from '@/components/Stepper'
 import ModelosHeaderSection from './ModelosHeaderSection'
 import ModelosGridSection from './ModelosGridSection'
+import ChangeStyleSection from './ChangeStyleSection'
 
 export const metadata: Metadata = {
   title: 'Catálogo de Modelos Premium | BoxPage Studio',
@@ -79,6 +80,8 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
       />
 
       <ModelosGridSection filteredModels={filteredModels} />
+
+      <ChangeStyleSection />
     </div>
   )
 }

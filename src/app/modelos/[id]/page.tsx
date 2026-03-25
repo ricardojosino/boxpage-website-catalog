@@ -4,6 +4,7 @@ import sitesData from '@/data/sites.json'
 import { notFound } from 'next/navigation'
 import Stepper from '@/components/Stepper'
 import ModelDetailSection from './ModelDetailSection'
+import ExploreMoreSection from './ExploreMoreSection'
 
 export async function generateMetadata({ params }: ModelDetailPageProps): Promise<Metadata> {
   const { id } = await params
@@ -75,6 +76,8 @@ export default async function ModelDetailPage({ params, searchParams }: ModelDet
         model={model}
         style={styleObj}
       />
+
+      <ExploreMoreSection styleId={style} />
     </div>
   )
 }
