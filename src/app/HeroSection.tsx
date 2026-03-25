@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="boxed-container py-8 xl:py-12">
+    <section className="boxed-container py-5 md:py-10">
       <div className="max-w-3xl flex flex-col gap-6">
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight">
           Descubra a <span className="text-primary tracking-tighter italic">vibe</span> perfeita para o seu projeto digital.

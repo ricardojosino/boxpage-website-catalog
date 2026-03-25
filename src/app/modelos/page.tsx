@@ -71,7 +71,7 @@ export default async function ModelosPage({ searchParams }: ModelosPageProps) {
   }
 
   return (
-    <div className="flex flex-col gap-12 py-10">
+    <div className="flex flex-col">
       <Stepper currentStep={2} styleId={styleIdStr} />
 
       <ModelosHeaderSection

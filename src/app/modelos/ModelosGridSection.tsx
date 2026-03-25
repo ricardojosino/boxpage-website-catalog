@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 
 export default function ModelosGridSection({ filteredModels }: { filteredModels: any[] }) {
   return (
-    <section className="boxed-container min-h-[400px]">
+    <section className="boxed-container min-h-[400px] py-5 md:py-10">
       {filteredModels.length > 0 ? (
         <Suspense fallback={<div>Carregando modelos...</div>}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">

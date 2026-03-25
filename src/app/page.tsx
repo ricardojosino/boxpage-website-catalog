@@ -35,7 +35,7 @@ export const dynamic = 'force-dynamic'
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col gap-8 py-10">
+    <div className="flex flex-col">
       <Stepper currentStep={1} styleId={null} />
 
       {/* Hero Section */}

@@ -6,7 +6,7 @@ export default function ModelosHeaderSection({
   filterContext: string 
 }) {
   return (
-    <section className="boxed-container flex flex-col md:flex-row items-center justify-between gap-6 border-b border-border pb-12">
+    <section className="boxed-container flex flex-col md:flex-row items-center justify-between gap-6 border-b border-border py-5 md:py-10">
       <div className="flex flex-col gap-4 max-w-2xl text-center md:text-left">
         <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight">
           {filterTitle}

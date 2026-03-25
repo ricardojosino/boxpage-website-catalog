@@ -23,10 +23,10 @@ export default function ModelDetailSection({ model, style }: ModelDetailSectionP
 
   return (
     <>
-      <section className="boxed-container grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20">
+      <section className="boxed-container grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 py-5 md:py-10">
         {/* Left Col: Screenshot */}
         <div className="flex flex-col gap-6">
-          <div className="group relative aspect-[1.91/1] overflow-hidden rounded-3xl border border-border bg-muted shadow-2xl shadow-primary/5">
+          <div className="group relative aspect-[1.91/1] overflow-hidden rounded-3xl border-4 border-primary bg-muted shadow-2xl shadow-primary/20">
             <Image
               src={model.image}
               alt={model.title}

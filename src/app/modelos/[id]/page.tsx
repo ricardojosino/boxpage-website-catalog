@@ -69,7 +69,7 @@ export default async function ModelDetailPage({ params, searchParams }: ModelDet
   const styleObj = stylesData.find(s => s.id === model.style_id)
 
   return (
-    <div className="flex flex-col gap-12 py-10">
+    <div className="flex flex-col">
       <Stepper currentStep={3} styleId={style || null} />
 
       <ModelDetailSection

@@ -11,7 +11,7 @@ export default function ExploreMoreSection({ styleId }: ExploreMoreSectionProps)
   const modelsPath = styleId ? `/modelos?style=${styleId}` : '/modelos'
 
   return (
-    <section className="boxed-container py-16 xl:py-24 border-t border-white/5">
+    <section className="boxed-container py-5 md:py-10 border-t border-white/5">
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 bg-zinc-900/40 p-8 md:p-12 rounded-4xl border border-white/5 backdrop-blur-sm">
         <div className="flex flex-col gap-4 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
