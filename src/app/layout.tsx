@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "BoxPage Studio | Catálogo de Modelos Premium",
   description: "Escolha o melhor modelo de site para o seu negócio com o catálogo exclusivo do BoxPage Studio.",
+  icons: {
+    icon: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({

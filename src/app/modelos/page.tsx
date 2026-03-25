@@ -1,8 +1,36 @@
+import type { Metadata } from 'next'
 import sitesData from '@/data/sites.json'
 import stylesData from '@/data/styles.json'
 import Stepper from '@/components/Stepper'
 import ModelosHeaderSection from './ModelosHeaderSection'
 import ModelosGridSection from './ModelosGridSection'
+
+export const metadata: Metadata = {
+  title: 'Catálogo de Modelos Premium | BoxPage Studio',
+  description: 'Conheça nossa coleção de modelos de alta performance, desenhados para elevar a presença digital do seu negócio.',
+  openGraph: {
+    title: 'Catálogo de Modelos Premium | BoxPage Studio',
+    description: 'Conheça nossa coleção de modelos de alta performance, desenhados para elevar a presença digital do seu negócio.',
+    url: 'https://catalogo.boxpage.pt/modelos',
+    siteName: 'BoxPage Studio',
+    images: [
+      {
+        url: '/images/screenshot-sites.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Catálogo de Modelos BoxPage Studio',
+      },
+    ],
+    locale: 'pt_PT',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Catálogo de Modelos Premium | BoxPage Studio',
+    description: 'Conheça nossa coleção de modelos de alta performance, desenhados para elevar a presença digital do seu negócio.',
+    images: ['/images/screenshot-sites.jpg'],
+  },
+}
 
 export const dynamic = 'force-dynamic'
 

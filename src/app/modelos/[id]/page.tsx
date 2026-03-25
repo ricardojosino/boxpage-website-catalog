@@ -1,10 +1,48 @@
+import type { Metadata } from 'next'
 import stylesData from '@/data/styles.json'
 import sitesData from '@/data/sites.json'
 import { notFound } from 'next/navigation'
 import Stepper from '@/components/Stepper'
 import ModelDetailSection from './ModelDetailSection'
 
-// Forçar renderização dinâmica (SSR) para garantir que temos os parâmetros no servidor
+export async function generateMetadata({ params }: ModelDetailPageProps): Promise<Metadata> {
+  const { id } = await params
+  const modelId = parseInt(id)
+  const model = sitesData.find(s => s.id === modelId)
+
+  if (!model) return {}
+
+  const title = `${model.title} | BoxPage Studio`
+  const description = model.legend
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `https://catalogo.boxpage.pt/modelos/${id}`,
+      siteName: 'BoxPage Studio',
+      images: [
+        {
+          url: model.image,
+          width: 1200,
+          height: 630,
+          alt: `Modelo ${model.title}`,
+        },
+      ],
+      locale: 'pt_PT',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [model.image],
+    },
+  }
+}
+
 export const dynamic = 'force-dynamic'
 
 interface ModelDetailPageProps {

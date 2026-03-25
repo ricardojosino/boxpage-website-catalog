@@ -23,7 +23,7 @@ export default function Stepper({ currentStep, styleId }: StepperProps) {
   }
 
   return (
-    <div className="w-full bg-background border-b border-white/5  xl:py-3 z-40 backdrop-blur-md">
+    <div className="w-full bg-background border-b border-white/5 xl:py-3 z-40 backdrop-blur-md">
       <div className="boxed-container">
         <nav aria-label="Progress" className="flex items-center justify-center">
           <ol className="flex items-center gap-4 sm:gap-8 xl:gap-16 w-full max-w-4xl">
