@@ -20,8 +20,9 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-100 w-full border-b border-border bg-background shadow-sm">
+
       {/* Desktop Header Content (>= 1200px) */}
-      <div className="hidden xl:flex boxed-container h-20 items-center justify-between">
+      <div className="hidden xl:flex boxed-container h-14 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl font-bold tracking-tighter text-primary">
             BOXPAGE<span className="text-foreground">STUDIO</span>
@@ -37,7 +38,7 @@ export default function Header() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button 
+          <button
             type="submit"
             className="absolute right-1.5 top-1/2 -translate-y-1/2 h-8 w-8 flex items-center justify-center bg-primary hover:brightness-110 text-primary-foreground rounded-full transition-all active:scale-90 shadow-lg shadow-primary/20"
             aria-label="Pesquisar"
@@ -52,6 +53,7 @@ export default function Header() {
         </nav>
       </div>
 
+
       {/* Mobile/Tablet Header Content (< 1200px) */}
       <div className="xl:hidden full-container h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
@@ -60,7 +62,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <button 
+        <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="p-2 text-foreground active:scale-95 transition-transform"
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
@@ -82,7 +84,7 @@ export default function Header() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <button 
+              <button
                 type="submit"
                 className="absolute right-2 top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center bg-primary hover:brightness-110 text-primary-foreground rounded-xl transition-all active:scale-95 shadow-md shadow-primary/10"
                 aria-label="Buscar"
@@ -97,9 +99,9 @@ export default function Header() {
                 { label: 'Site Oficial', href: 'https://boxpage.pt', external: true },
                 { label: 'Privacidade', href: '/privacidade' }
               ].map((link) => (
-                <Link 
+                <Link
                   key={link.href}
-                  href={link.href} 
+                  href={link.href}
                   target={link.external ? "_blank" : undefined}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between py-4 px-2 hover:bg-white/5 rounded-xl transition-colors active:scale-98"

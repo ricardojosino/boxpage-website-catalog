@@ -23,7 +23,7 @@ export default function Stepper({ currentStep, styleId }: StepperProps) {
   }
 
   return (
-    <div className="w-full bg-background border-b border-white/5 py-4 xl:py-6 sticky top-16 xl:top-20 z-40 backdrop-blur-md">
+    <div className="w-full bg-background border-b border-white/5  xl:py-3 z-40 backdrop-blur-md">
       <div className="boxed-container">
         <nav aria-label="Progress" className="flex items-center justify-center">
           <ol className="flex items-center gap-4 sm:gap-8 xl:gap-16 w-full max-w-4xl">
@@ -38,7 +38,7 @@ export default function Stepper({ currentStep, styleId }: StepperProps) {
               const isClickable = status !== 'upcoming'
 
               return (
-                <li key={step.id} className={`flex items-center ${!isLast ? 'flex-1' : ''}`}>
+                <li key={step.id} className={`flex items-center justify-center ${!isLast ? 'flex-1' : ''}`}>
                   <Link
                     href={isClickable ? stepPath : '#'}
                     className={`flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group transition-all ${isClickable ? 'cursor-pointer hover:opacity-80' : 'cursor-default opacity-40'}`}
@@ -67,7 +67,7 @@ export default function Stepper({ currentStep, styleId }: StepperProps) {
                     </div>
 
                     {/* Labels */}
-                    <div className="flex flex-col">
+                    <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                       <span className={`text-[10px] sm:text-[11px] uppercase font-black tracking-widest leading-none ${status === 'active' ? 'text-primary' : 'text-muted-foreground'}`}>
                         Etapa 0{step.id}
                       </span>
