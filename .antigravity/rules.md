@@ -35,12 +35,15 @@ Seu diferencial é a **Estética e UX**: você não cria apenas código funciona
 Você deve seguir estritamente esta estrutura baseada em `src/` para manter a raiz limpa.
 
 ### Regras do tema, conteúdo e funcionalidades
-Use o arquivo `agent-specs/contents/theme.md` para saber sobre tipografia,paleta de cores, espaçamentos etc.
-Use a pasta `agent-specs/contents/functionalities` para acessar as orientações sobre funcionalidades específicas.
-Use a pasta `agent-specs/contents/pages` para acessar as orientações sobre o conteúdo das páginas.
-Use a pasta `agent-specs/references` para ver arquivos em formato de imagem para entender sobre o designer da aplicação.
-Use a pasta `agent-specs/data` para acessar as orientações sobre APIs e Interfaces.
+Use a pasta `.antigravity/context/references` para ver arquivos em formato de imagem para entender sobre o designer da aplicação.
+Use a pasta `.antigravity/context/api` para acessar as orientações sobre APIs, dados e Interfaces.
+Use a pasta `.antigravity/skills/` Se houver um arquivo `.md` lá que se aplique à tarefa atual (ex: `seo-expert.md` para metadados), incorpore as diretrizes desse arquivo como se fossem extensões destas regras principais.
+Use o arquivo `.antigravity/context/theme.md` para saber sobre tipografia,paleta de cores, espaçamentos etc.
+Use o arquivo `.antigravity/context/functionalities.md` para acessar as orientações sobre funcionalidades específicas.
+Use o arquivo `.antigravity/context/pages.md` para acessar as orientações sobre o conteúdo das páginas.
 Use o arquivo `src/app/globals.css` para configurar os padrões de design.
+Use o arquivo `.antigravity/skills/seo-performance.md` para saber como aplicar SEO mas páginas.
+
 
 
 ### Raiz do Projeto:
@@ -75,10 +78,12 @@ Exemplo: `src/data/products.ts` -> Importado na página -> Passado via props par
 Use sempre o alias `@/` para importar arquivos de dentro de `src/`.
 Exemplo: `import Button from "@/components/Button"` ao invés de `../../components/Button`.
 
-## ESTRATÉGIA DE RENDERIZAÇÃO (NEXT.JS)
-**SSG First:** A `src/app/page.tsx` principal deve ser estática (default do Next.js).
-**Server Components:** Mantenha os componentes como Server Components sempre que possível.
-**Client Components:** Adicione `'use client'` APENAS nas folhas da árvore de componentes que precisam de interatividade (hooks) ou animações de browser.
+## ESTRATÉGIA DE RENDERIZAÇÃO ATIVA
+**Regra de Ouro:** Por padrão, este projeto opera em modo **SSG (Static)**.
+
+1. **Ativação:** Siga estritamente as diretrizes do arquivo `.antigravity/skills/nextjs-ssg.md`.
+2. **Server Components:** Prioridade máxima. O HTML deve chegar pronto do servidor.
+3. **Client Components:** Use o padrão de "folhas da árvore" (leaves). Apenas componentes que exigem `useState`, `useEffect` ou `framer-motion` recebem `'use client'`.
 
 ## PADRÃO VISUAL DE COMPONENTES (DESIGN TOKENS)
 Ao criar novos componentes ou "Skills" visuais para o projeto, nunca invente valores arbitrários. O agente deve seguir ESTRITAMENTE o mapeamento abaixo para garantir a "VibeCode":
@@ -104,15 +109,15 @@ Ao criar novos componentes ou "Skills" visuais para o projeto, nunca invente val
 
 Quando solicitado a criar uma página:
 
-- Analise a pasta .agent-specs quando necessário para entender sobre as regras e padrões.
+- Analise a pasta .antigravity para entender sobre as regras e padrões.
 
 - Defina o Layout Visual: Descreva as seções e a "vibe".
 
 - Quando for listar dados grandes, como artigos ou produtos, crie os dados (Mock): Gere o arquivo em `src/data`.
 
-- Procute na pasta `src/components` para saber se existe algum componente que você pode reaproveitar. 
+- Procure na pasta `src/components` para saber se existe algum componente que você pode reaproveitar. 
 
-- Crie os Componentes reutilisáveis novos em `src/components`. 
+- Crie os Componentes reutilizáveis novos em `src/components`. 
 
 - Crie os componentes de seções específicos da página na pasta da rota em `src/app`. Neste caso, como o componente é específico da página, insira o conteúdo direto no componente.
 
