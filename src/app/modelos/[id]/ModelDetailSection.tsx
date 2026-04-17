@@ -103,7 +103,7 @@ export default function ModelDetailSection({ model, style }: ModelDetailSectionP
                 <div className="w-8 h-[2px] bg-primary" /> Funcionalidades Incluídas
               </div>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {['Design Responsivo', 'SEO Otimizado', 'Formulário de contato', 'Site Seguro SSL', 'Sem custo de alojamento', 'Suporte contínuo'].map((feat) => (
+                {['Design Responsivo', 'SEO Otimizado', 'Formulário de contacto', 'Site Seguro SSL', 'Sem custo de alojamento', 'Suporte contínuo'].map((feat) => (
                   <li key={feat} className="flex items-center gap-2 text-sm text-muted-foreground">
                     <CheckCircle2 className="h-4 w-4 text-primary" />
                     {feat}

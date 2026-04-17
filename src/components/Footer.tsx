@@ -14,7 +14,7 @@ export default function Footer() {
 
         <nav className="flex items-center gap-8">
           <Link href="https://boxpage.pt" target="_blank" className="hover:text-primary transition-colors">Site Oficial</Link>
-          <Link href="https://boxpage.pt/contato" target="_blank" className="hover:text-primary transition-colors">Contato</Link>
+          <Link href="https://boxpage.pt/contato" target="_blank" className="hover:text-primary transition-colors">Contacto</Link>
           <Link href="https://boxpage.pt/privacidade" target="_blank" className="hover:text-primary transition-colors">Privacidade</Link>
         </nav>
 

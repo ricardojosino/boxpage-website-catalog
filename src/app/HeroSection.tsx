@@ -7,7 +7,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
           Escolher um estilo serve apenas como referência inicial para entendermos o seu gosto. 
-          Utilizaremos as características visuais do estilo escolhido para apresentar os modelos ideais.
+          Utilizaremos as características visuais do modelo escolhido como base para desenvolver o seu site personalizado.
         </p>
       </div>
     </section>

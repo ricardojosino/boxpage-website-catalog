@@ -166,7 +166,7 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
                           <input
                             required
                             type="email"
-                            placeholder="Ex: usuario@empresa.pt"
+                            placeholder="Ex: utilizador@empresa.pt"
                             className="w-full h-12 pl-11 pr-4 rounded-xl bg-secondary border-none focus:ring-2 focus:ring-primary text-sm transition-all"
                             value={formData.email}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}

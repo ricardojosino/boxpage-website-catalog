@@ -5,10 +5,32 @@
     "title": "Axioma",
     "legend": "Design cirúrgico e tecnológico focado em transmitir segurança e higiene. O padrão ouro para médicos que priorizam a confiança e o prestígio clínico.",
     "description": "O modelo Axioma foi desenvolvido para profissionais que não abrem mão da seriedade e do rigor científico. Com uma estética inspirada em ambientes médicos de alta performance, este layout utiliza o Branco Absoluto e o Azul Marinho para criar uma atmosfera de confiança imediata e assepsia visual. Cada seção foi estrategicamente posicionada para elevar o status do profissional: desde o Hero focado na presença clínica até a exibição de certificações e tecnologia de ponta. A tipografia geométrica (Inter/Roboto) garante uma leitura clara e moderna, ideal para quem deseja ser reconhecido como uma referência inquestionável na sua especialidade. É a escolha ideal para dermatologistas e médicos que transformam vidas através da ciência e da técnica avançada.",
-    "image": "/images/screenshot-axioma.jpg",
+    "image": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/images/screenshot.jpg",
     "typography": "Totalmente sans-serif, geométrica e minimalista, desenhada para garantir a máxima legibilidade e transmitir uma sensação de rigor técnico, precisão e modernidade absoluta.",
     "vibe": "Segurança, ciência e higiene. Uma estética de assepsia visual e alta performance clínica, onde a sobriedade dos tons frios e a organização impecável projetam uma autoridade inquestionável e um prestígio médico de excelência.",
     "link": "https://boxpage-website-catalog--clinico-autoridade--axioma.vercel.app/"
+  },
+  {
+    "id": 827328,
+    "style_id": 1,
+    "title": "Prisma",
+    "legend": "O padrão tecnológico para clínicas de diagnóstico, oftalmologia e exames de alta precisão. Um layout futurista que transmite exatidão científica total.",
+    "description": "O modelo Prisma foi concebido para profissionais que operam na vanguarda da tecnologia médica. Inspirado na pureza do cristal e na precisão da luz, este layout utiliza elementos visuais de transparência e profundidade (glassmorphism) para comunicar a sua maior promessa: a eliminação da dúvida. A estrutura é focada em destacar a infraestrutura tecnológica e o rigor dos protocolos, transformando o site numa extensão do seu laboratório ou consultório. É a escolha ideal para clínicas de diagnóstico por imagem, oftalmologistas e médicos que desejam posicionar-se como a autoridade máxima em exatidão e clareza científica.",
+    "image": "https://boxpage-website-catalog--clinico-autoridade--prisma.vercel.app/images/screenshot.jpg",
+    "typography": "Uma sans-serif geométrica e extremamente límpida, com um espaçamento entre letras (tracking) generoso que evoca uma estética técnica, futurista e de leitura imediata.",
+    "vibe": "Alta tecnologia, transparência e precisão microscópica. Uma atmosfera inspirada na pureza do cristal e no rigor da luz, utilizando efeitos de profundidade e transparência para comunicar exatidão científica total.",
+    "link": "https://boxpage-website-catalog--clinico-autoridade--prisma.vercel.app"
+  },
+  {
+    "id": 192839,
+    "style_id": 1,
+    "title": "Vértice",
+    "legend": "Estética de alto contraste e rigor geométrico para cirurgiões e especialistas que operam no topo da performance estética.",
+    "description": "O modelo Vértice foi desenhado para profissionais que veem a medicina como uma arte de precisão. Inspirado na geometria sagrada e no design de alto padrão, este layout utiliza o contraste entre tons profundos e detalhes metálicos para criar uma aura de prestígio e autoridade inquestionável. A sua estrutura é pensada para destacar a perfeição dos ângulos e a segurança dos resultados, transformando o site numa montra de excelência técnica. É a escolha ideal para cirurgiões plásticos, ortodontistas e médicos estéticos que desejam atrair um público que valoriza o detalhe, a exclusividade e a maestria cirúrgica.",
+    "image": "https://boxpage-website-catalog--clinico-autoridade--vertice.vercel.app/images/screenshot.jpg",
+    "typography": "Combinação de uma sans-serif bold de elevado impacto para títulos estruturais com uma tipografia técnica refinada no corpo de texto, reforçando a ideia de autoridade e planeamento minucioso.",
+    "vibe": "Rigor, luxo cirúrgico e simetria absoluta. Uma estética de alto contraste que utiliza a iluminação dramática e os ângulos precisos para comunicar uma união perfeita entre a ciência médica e a arte da proporção.",
+    "link": "https://boxpage-website-catalog--clinico-autoridade--vertice.vercel.app"
   },
   {
     "id": 323456,
@@ -16,10 +38,32 @@
     "title": "Prana",
     "legend": "Uma experiência visual orgânica e imersiva. Desenhado para terapeutas que transformam o atendimento num ritual de pausa, cura e conexão profunda.",
     "description": "O modelo Prana foi concebido para ser a extensão digital de um refúgio de paz. Focado na filosofia do respiro, este layout utiliza uma estrutura minimalista e fluida que guia o visitante por uma jornada de relaxamento antes mesmo da primeira consulta. Cada seção foi planeada para elevar o valor do toque e da atmosfera: desde a apresentação poética dos rituais de assinatura até à galeria focada nos detalhes que tornam o espaço único. Com uma tipografia que equilibra a elegância clássica e a leveza moderna, o Prana elimina o ruído visual, criando um ambiente onde o conteúdo respira. É a escolha ideal para massoterapeutas e profissionais do bem-estar que desejam projetar uma imagem de serenidade, cuidado artesanal e revitalização.",
-    "image": "/images/screenshot-prana.jpg",
+    "image": "https://boxpage-website-catalog--bem-estar-zen--prana.vercel.app/images/screenshot.jpg",
     "typography": "Equilíbrio perfeito entre a elegância clássica de uma fonte serifada para títulos e a leveza moderna de uma tipografia sans-serif no corpo de texto, garantindo uma leitura descansada, clara e sofisticada.",
     "vibe": "Respira e relaxa. Uma atmosfera orgânica e imersiva que privilegia a luz natural, as texturas da terra e o silêncio visual, convidando o utilizador a uma jornada imediata de pausa, cura e regeneração profunda.",
     "link": "https://boxpage-website-catalog--bem-estar-zen--prana.vercel.app/"
+  },
+  {
+    "id": 842195,
+    "style_id": 2,
+    "title": "Serena",
+    "legend": "Estética monocromática e minimalista para espaços que cultivam o relaxamento profundo e a pureza visual.",
+    "description": "O modelo Serena foi desenhado para profissionais que acreditam que menos é mais. Inspirado no minimalismo contemporâneo, este layout utiliza o vazio como uma ferramenta de design para acalmar os sentidos do visitante antes mesmo do toque. Com uma paleta monocromática e luzes suaves, a estrutura elimina qualquer distração, focando inteiramente na sensação de paz e clareza mental. É a escolha ideal para estúdios de meditação e terapeutas de relaxamento que desejam posicionar a sua marca como um oásis de quietude no caos do dia a dia.",
+    "image": "https://boxpage-website-catalog--bem-estar-zen--serena.vercel.app/images/screenshot.jpg",
+    "typography": "Sans-serif ultra-leve com grande espaçamento entre letras, transmitindo uma sensação de leveza, fluidez e respiro visual.",
+    "vibe": "Minimalismo extremo, silêncio visual e pureza. Uma estética monocromática em tons de off-white e areia com foco em rostos relaxados e iluminação zenital.",
+    "link": "https://boxpage-website-catalog--bem-estar-zen--serena.vercel.app/"
+  },
+  {
+    "id": 4382938,
+    "style_id": 2,
+    "title": "Éter",
+    "legend": "Estética mística e vibracional para terapeutas holísticos que trabalham a harmonia entre o corpo e a energia invisível.",
+    "description": "O modelo Éter foi concebido para ser o portal digital de práticas que transcendem o físico. Inspirado na fluidez dos elementos e na geometria sagrada, este layout utiliza tons de lavanda e índigo para criar uma atmosfera de conexão espiritual imediata. A sua estrutura é pensada para educar e acolher, apresentando infográficos claros sobre jornadas de cura e seções de esclarecimento que desmistificam terapias energéticas. É a escolha ideal para mestres de Reiki, terapeutas de som e oraculistas que desejam posicionar o seu trabalho como uma ponte entre a sabedoria ancestral e o equilíbrio moderno.",
+    "image": "https://boxpage-website-catalog--bem-estar-zen--eter.vercel.app/images/screenshot.jpg",
+    "typography": "Uma mistura sofisticada de fonte clássica serifada com uma caligrafia manual refinada, transmitindo uma sensação de conhecimento sagrado e cuidado artesanal.",
+    "vibe": "Espiritualidade, fluxo e energia. Uma estética marcada por elementos etéreos como fumo de incenso, cristais e luz de crepúsculo, evocando uma jornada de transformação profunda.",
+    "link": "https://boxpage-website-catalog--bem-estar-zen--eter.vercel.app"
   },
   {
     "id": 772301,
@@ -27,9 +71,119 @@
     "title": "Áurea",
     "legend": "Estética de luxo com detalhes em dourado champagne e foco em resultados de alta performance para clínicas de medicina estética de elite.",
     "description": "O modelo Áurea foi concebido para profissionais que não entregam apenas procedimentos, mas esculpem identidades. Inspirado na Proporção Áurea e no mercado de luxo internacional, este layout utiliza o contraste entre o branco pérola e o dourado champagne para elevar instantaneamente o valor percebido da marca. A estrutura é focada em converter o desejo em consulta através de uma galeria de resultados impecável e uma tabela de investimentos que seleciona o público certo. É a escolha definitiva para médicos e estetas que desejam transparecer exclusividade, rigor técnico e um padrão de beleza editorial.",
-    "image": "/images/screenshot-aurea.jpg",
+    "image": "https://boxpage-website-catalog--estetica-premium--aurea.vercel.app/images/screenshot.jpg",
     "typography": "Combinação luxuosa de fontes serifadas de alto contraste para títulos magnéticos, equilibrada com uma tipografia sans-serif leve e moderna para garantir elegância e fluidez na leitura.",
     "vibe": "Exclusividade extrema e luxo silencioso. Uma estética inspirada em editoriais de moda de prestígio, transmitindo autoridade estética, rigor técnico e sofisticação urbana.",
     "link": "https://boxpage-website-catalog--estetica-premium--aurea.vercel.app/"
+  },
+  {
+    "id": 642831,
+    "style_id": 3,
+    "title": "Matte",
+    "legend": "Estética de alto contraste e minimalismo sombrio para clínicas que definem o padrão do luxo contemporâneo.",
+    "description": "O modelo Matte foi concebido para marcas que não precisam de brilho para se destacar. Inspirado no design de carros de luxo e na arquitetura brutalista, este layout utiliza o preto profundo e o cinza carvão para criar uma aura de autoridade inquestionável e mistério. A sua estrutura de alto contraste é ideal para clínicas de estética masculina de luxo ou procedimentos avançados que prezam pela discrição e pelo resultado cirúrgico. É a escolha definitiva para o profissional que deseja projetar uma imagem de força, sofisticação e domínio técnico absoluto.",
+    "image": "https://boxpage-website-catalog--estetica-premium--matte.vercel.app/images/screenshot.jpg",
+    "typography": "Serifada moderna de alto impacto para títulos estruturais, combinada com uma sans-serif geométrica para o corpo de texto, garantindo autoridade e leitura técnica.",
+    "vibe": "Minimalismo extremo, masculinidade elegante e sobriedade absoluta. Uma estética de sombras profundas, peles com acabamento opaco e iluminação dramática que evoca prestígio e domínio técnico.",
+    "link": "https://boxpage-website-catalog--estetica-premium--matte.vercel.app/"
+  },
+  {
+    "id": 519372,
+    "style_id": 3,
+    "title": "Glow",
+    "legend": "Estética de tons nude e efeitos de vidro para clínicas focadas em tratamentos faciais e luminosidade da pele.",
+    "description": "O modelo Glow foi desenvolvido para marcas que celebram a beleza natural e a saúde da pele. Inspirado na luminosidade saudável e na transparência do vidro, este layout utiliza tons de nude rosado e efeitos de glassmorphism para criar uma experiência digital leve e sofisticada. A sua estrutura é ideal para clínicas de estética facial e dermatologistas que desejam projetar uma imagem de frescor, hidratação e resultados naturais, convidando o cliente a despertar o brilho que existe em si.",
+    "image": "https://boxpage-website-catalog--estetica-premium--glow.vercel.app/images/screenshot.jpg",
+    "typography": "Serifada elegante e feminina para títulos estruturais, combinada com uma sans-serif leve e moderna para o corpo de texto, transmitindo sofisticação e clareza.",
+    "vibe": "Luminosidade, feminilidade sofisticada e frescor. Uma estética marcada por efeitos de glassmorphism, peles com acabamento dewy e uma iluminação soft que evoca hidratação e revitalização.",
+    "link": "https://boxpage-website-catalog--estetica-premium--glow.vercel.app/"
+  },
+  {
+    "id": 619283,
+    "style_id": 4,
+    "title": "Âncora",
+    "legend": "Estética de tons de azul profundo e areia para clínicas de saúde mental que buscam transmitir estabilidade e acolhimento.",
+    "description": "O modelo Âncora foi desenhado para clínicas e profissionais de saúde mental que desejam ser um porto seguro para os seus pacientes. Inspirado na força e estabilidade da âncora, este layout utiliza tons de azul profundo e areia para criar uma atmosfera de calma e confiança. A sua estrutura é ideal para psicólogos, psiquiatras e terapeutas que focam no acolhimento e no suporte emocional, posicionando o seu espaço como um local de cura e reencontro com o equilíbrio interior.",
+    "image": "https://boxpage-website-catalog--equilibrio-humano--ancora.vercel.app/images/screenshot.jpg",
+    "typography": "Serifada sólida e confiável para títulos estruturais, combinada com uma sans-serif limpa e acolhedora para o corpo de texto, transmitindo segurança e proximidade.",
+    "vibe": "Segurança, estabilidade e acolhimento. Uma estética de tons oceânicos e areia com luz natural suave e texturas orgânicas que evocam calma, esperança e suporte emocional.",
+    "link": "https://boxpage-website-catalog--equilibrio-humano--ancora.vercel.app/"
+  },
+  {
+    "id": 472915,
+    "style_id": 4,
+    "title": "Farol",
+    "legend": "Estética luminosa e tons pastéis de amarelo e branco para profissionais focados em autoconhecimento e clareza de pensamento.",
+    "description": "O modelo Farol foi concebido para os profissionais da mente que atuam como guias na jornada do autoconhecimento. Inspirado na função orientadora do farol e na sensação de um insight, este layout utiliza o amarelo palha suave e o branco puro para criar uma atmosfera de otimismo e lucidez. É a escolha ideal para psicólogos focados em Terapia Cognitivo-Comportamental, coaches e terapeutas que desejam posicionar o seu serviço como um processo de iluminação de questões complexas, ajudando o cliente a dissipar o nevoeiro mental e a encontrar a sua própria direção com confiança e paz.",
+    "image": "https://boxpage-website-catalog--equilibrio-humano--faro.vercel.app/images/screenshot.jpg",
+    "typography": "Sans-serif ultra-leve e moderna com grande espaçamento entre caracteres, transmitindo uma sensação de respiração, lucidez e modernidade intelectual.",
+    "vibe": "Claridade mental, otimismo calmo e insights. Uma estética High-Key marcada por tons de amarelo palha e branco puro, com focos de luz difratada e ambientes que evocam a dissipação do nevoeiro mental.",
+    "link": "https://boxpage-website-catalog--equilibrio-humano--faro.vercel.app/"
+  },
+  {
+    "id": 852941,
+    "style_id": 4,
+    "title": "Raiz",
+    "legend": "Estética de tons terrosos e terracota para terapeutas sistémicos e profissionais que focam na base e na ancestralidade.",
+    "description": "O modelo Raiz foi desenhado para profissionais que mergulham nas profundezas da história pessoal para promover a cura. Inspirado na conexão com a terra e na solidez das linhagens familiares, este layout utiliza o castanho amendoado e a terracota para criar uma atmosfera de segurança e acolhimento visceral. É a escolha ideal para psicólogos sistémicos e terapeutas que acreditam que para florescer é preciso cuidar da base, posicionando o seu serviço como um processo de reconexão com a identidade e com a força que vem dos antepassados.",
+    "image": "https://boxpage-website-catalog--equilibrio-humano--raiz.vercel.app/images/screenshot.jpg",
+    "typography": "Serifada humanista com um toque artesanal para títulos estruturais, combinada com uma sans-serif orgânica para o corpo de texto, reforçando a sensação de naturalidade e herança.",
+    "vibe": "Ancestralidade, acolhimento telúrico e profundidade. Uma estética de tons quentes e terrosos com grão de película analógica, focando em texturas naturais e retratos expressivos que evocam solidez emocional.",
+    "link": "https://boxpage-website-catalog--equilibrio-humano--raiz.vercel.app"
+  },
+  {
+    "id": 673821,
+    "style_id": 5,
+    "title": "Neon",
+    "legend": "Estética de alto contraste e tipografia bold com efeitos de neon para clínicas de estética que definem o padrão do luxo contemporâneo urbano.",
+    "description": "O modelo Neon foi desenhado para as clínicas de estética que não têm medo de brilhar. Inspirado na energia das metrópoles e na estética urbana contemporânea, este layout utiliza o rosa neon vibrante sobre fundo branco para criar uma experiência digital eletrizante. A sua estrutura de alto contraste e tipografia bold é ideal para clínicas de estética avançada que desejam projetar uma imagem de inovação, tecnologia e resultados de impacto imediato. É a escolha definitiva para o profissional que deseja atrair um público jovem, antenado e que busca uma beleza autêntica e vibrante.",
+    "image": "https://boxpage-website-catalog--moderno-vribrante--neon.vercel.app/images/screenshot.jpg",
+    "typography": "Sans-serif geométrica e bold para títulos de grande impacto, combinada com uma sans-serif linear para o corpo de texto, garantindo uma leitura rápida, técnica e moderna.",
+    "vibe": "Energética, moderna e ousada. Uma estética de 'luz dura' com filtros de gel neon, foco em detalhes macro e texturas vibrantes que evocam uma atmosfera urbana e tecnológica.",
+    "link": "https://boxpage-website-catalog--moderno-vribrante--neon.vercel.app/"
+  },
+  {
+    "id": 581932,
+    "style_id": 5,
+    "title": "Pop",
+    "legend": "Estética de cores primárias brilhantes e formas geométricas com sombras sólidas para manicuras e nail artists que vendem alegria e criatividade.",
+    "description": "O modelo Pop foi desenhado para as profissionais de unhas que não têm medo de ousar. Inspirado na energia do Pop Art e na estética lúdica contemporânea, este layout utiliza cores primárias brilhantes e sombras sólidas para criar uma experiência digital eletrizante. A sua estrutura de alto contraste e tipografia bold é ideal para profissionais que desejam projetar uma imagem de inovação e diversão. É a escolha definitiva para atrair um público jovem e antenado que busca uma beleza autêntica, vibrante e cheia de personalidade.",
+    "image": "https://boxpage-website-catalog--moderno-vribrante--pop.vercel.app/images/screenshot.jpg",
+    "typography": "Sans-serif geométrica e bold com toques arredondados para títulos de grande impacto (estilo sticker), combinada com uma sans-serif limpa e moderna para o corpo de texto.",
+    "vibe": "Energética, lúdica e transformadora. Uma estética de cores vibrantes (Vermelho Pop, Azul Elétrico) com sombras sólidas, formas concêntricas e uma comunicação visual que respira otimismo e diversão.",
+    "link": "https://boxpage-website-catalog--moderno-vribrante--pop.vercel.app/"
+  },
+  {
+    "id": 312947,
+    "style_id": 6,
+    "title": "Pórtico",
+    "legend": "Layout simétrico e foco arquitetónico para grandes centros clínicos que valorizam a estrutura física e a tradição.",
+    "description": "O modelo Pórtico foi desenhado para centros integrados que se orgulham da sua estrutura e solidez. Inspirado na arquitetura clássica e na organização hospitalar de luxo, este layout utiliza a simetria para transmitir uma sensação imediata de ordem, equilíbrio e segurança. É a escolha ideal para clínicas multidisciplinares que desejam destacar a sua receção imponente e a variedade de especialidades num único local, projetando uma imagem de instituição estabelecida, onde o paciente encontra tudo o que precisa com o máximo de conforto e profissionalismo.",
+    "image": "https://boxpage-website-catalog--centro-integrado--portico.vercel.app/images/screenshot.jpg",
+    "typography": "Serifada clássica e estatutária para títulos, evocando tradição e rigor, combinada com uma sans-serif de alta legibilidade para o corpo de texto, garantindo clareza na comunicação institucional.",
+    "vibe": "Institucional, sólido e confiável. Uma estética de arquitetura limpa com luz do dia, simetria perfeita e tons de Azul Ardósia que transmitem amplitude e segurança hospitalar de alto padrão.",
+    "link": "https://boxpage-website-catalog--centro-integrado--portico.vercel.app"
+  },
+  {
+    "id": 721459,
+    "style_id": 6,
+    "title": "Aliança",
+    "legend": "Foco absoluto no capital humano e na organização por categorias para centros clínicos multidisciplinares.",
+    "description": "O modelo Aliança foi desenhado para clínicas que acreditam que o melhor cuidado nasce da colaboração. Inspirado na sinergia de equipas multidisciplinares, este layout coloca os profissionais no centro da experiência digital. Com um sistema de filtros inteligente por categorias (Corpo, Rosto, Mente), o paciente consegue navegar facilmente pela vasta gama de serviços e encontrar o especialista ideal. É a escolha definitiva para grandes centros integrados que desejam humanizar a sua marca institucional, destacando a competência individual de cada membro da 'aliança' clínica.",
+    "image": "https://boxpage-website-catalog--centro-integrado--alianca.vercel.app/images/screenshot.jpg",
+    "typography": "Sans-serif moderna e geométrica, transmitindo uma sensação de clareza, organização impecável e cooperação técnica entre especialidades.",
+    "vibe": "Colaborativa, profissional e técnica. Uma estética de Azul Marinho Profundo e Branco Neve, com retratos profissionais consistentes que reforçam a confiança no corpo clínico e na sinergia da equipa.",
+    "link": "https://boxpage-website-catalog--centro-integrado--alianca.vercel.app"
+  },
+  {
+    "id": 429156,
+    "style_id": 6,
+    "title": "Mosaico",
+    "legend": "Layout em grelha colorida por departamentos para centros médicos e estéticos com vasta gama de serviços.",
+    "description": "O modelo Mosaico foi criado para resolver o caos visual de clínicas com muitos serviços. Inspirado na interface de sistemas operacionais modernos e no design de sinalética de grandes centros europeus, este layout utiliza a cor como ferramenta de navegação. Cada departamento possui sua própria identidade cromática dentro de uma grid geométrica perfeita, permitindo que o paciente identifique e acesse o que precisa em segundos. É a escolha ideal para policlínicas e centros de bem-estar que desejam transmitir uma imagem de eficiência tecnológica, organização impecável e modernidade absoluta.",
+    "image": "https://boxpage-website-catalog--centro-integrado--mosaico.vercel.app/images/screenshot.jpg",
+    "typography": "Sans-serif robusta e moderna (estilo Montserrat ou Inter), focada em legibilidade máxima, pesos variados para hierarquia e uma estética digital limpa.",
+    "vibe": "Pragmática, ultra-organizada e facilitadora. Uma estética baseada num sistema de color-coding (Turquesa, Coral, Lavanda, Ocre) sobre fundo neutro, com fotografia simétrica que reforça a ordem e a eficiência.",
+    "link": "https://boxpage-website-catalog--centro-integrado--mosaico.vercel.app"
   }
 ]
