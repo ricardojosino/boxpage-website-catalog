@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const baseUrl = process.env.NODE_ENV === 'development' 
-  ? process.env.NEXT_PUBLIC_SITE_URL_DEV! 
-  : process.env.NEXT_PUBLIC_SITE_URL_PROD!;
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL_PROD || 
+                process.env.NEXT_PUBLIC_SITE_URL_DEV || 
+                'https://catalogo.boxpage.pt';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
