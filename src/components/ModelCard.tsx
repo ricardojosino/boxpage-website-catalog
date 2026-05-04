@@ -16,7 +16,7 @@ interface ModelCardProps {
 export default function ModelCard({ id, title, legend, image }: ModelCardProps) {
   const searchParams = useSearchParams()
   const styleId = searchParams.get('style')
-  const detailUrl = styleId ? `/modelos/${id}?style=${styleId}` : `/modelos/${id}`
+  const detailUrl = styleId ? `/modelos/tema/${id}?style=${styleId}` : `/modelos/tema/${id}`
 
   return (
     <motion.div

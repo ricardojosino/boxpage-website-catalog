@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Send, CheckCircle2, Phone, Mail, User, Building, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import { submitOrderAction } from '@/app/actions/submitOrder'
 
 interface OrderModalProps {
   isOpen: boolean
@@ -47,36 +48,30 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
- 
-    const payload = {
-      ...formData,
-      modelId: model.id,
-      modelTitle: model.title,
-      modelLink: model.link,
-      styleTitle: style?.title,
-      catalogUrl: typeof window !== 'undefined' ? window.location.href : ''
-    }
- 
+
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-      });
- 
-      if (!response.ok) {
-        throw new Error('Falha ao enviar e-mail');
+      const result = await submitOrderAction({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        modelTitle: model.title,
+        modelId: model.id,
+        modelLink: model.link,
+        styleTitle: style?.title || '',
+        origin: typeof window !== 'undefined' ? window.location.href : ''
+      })
+
+      if (result.success) {
+        setStep('success')
+      } else {
+        alert(result.error || 'Ocorreu um erro ao enviar o seu pedido. Por favor, tente novamente.')
       }
- 
-      console.log('Pedido enviado com sucesso:', payload);
-      setStep('success');
     } catch (error) {
-      console.error('Erro ao enviar pedido:', error);
-      alert('Ocorreu um erro ao enviar o seu pedido. Por favor, tente novamente.');
+      console.error('Erro ao enviar pedido:', error)
+      alert('Ocorreu um erro inesperado. Por favor, tente novamente.')
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
   }
 

@@ -15,11 +15,46 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = process.env.NODE_ENV === 'development' 
+  ? process.env.NEXT_PUBLIC_SITE_URL_DEV! 
+  : process.env.NEXT_PUBLIC_SITE_URL_PROD!;
+
 export const metadata: Metadata = {
-  title: "BoxPage Studio | Catálogo de Modelos Premium",
-  description: "Escolha o melhor modelo de site para o seu negócio com o catálogo exclusivo do BoxPage Studio.",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "BoxPage Studio | Catálogo de Modelos Premium",
+    template: "%s | BoxPage"
+  },
+  description: "Escolha o melhor modelo de site para o seu negócio com o catálogo exclusivo do BoxPage Studio. Designs de alta conversão e performance.",
+  keywords: ["modelos de site", "landing pages", "design premium", "boxpage studio", "catálogo de sites"],
+  authors: [{ name: "BoxPage Studio", url: "https://boxpage.pt" }],
+  creator: "BoxPage Studio",
+  openGraph: {
+    type: "website",
+    locale: "pt_PT",
+    url: baseUrl,
+    siteName: "BoxPage Studio",
+    images: [
+      {
+        url: "/images/screenshot-style.jpg",
+        width: 1200,
+        height: 630,
+        alt: "BoxPage Studio Catalog",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BoxPage Studio | Catálogo de Modelos Premium",
+    description: "Modelos de sites exclusivos e de alta performance.",
+    images: ["/images/screenshot-style.jpg"],
+  },
   icons: {
     icon: "/images/favicon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

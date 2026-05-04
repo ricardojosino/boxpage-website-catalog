@@ -6,31 +6,36 @@ import ModelosHeaderSection from './ModelosHeaderSection'
 import ModelosGridSection from './ModelosGridSection'
 import ChangeStyleSection from './ChangeStyleSection'
 
-export const metadata: Metadata = {
-  title: 'Catálogo de Modelos Premium | BoxPage Studio',
-  description: 'Conheça nossa coleção de modelos de alta performance, desenhados para elevar a presença digital do seu negócio.',
-  openGraph: {
-    title: 'Catálogo de Modelos Premium | BoxPage Studio',
+export async function generateMetadata({ searchParams }: ModelosPageProps): Promise<Metadata> {
+  const params = await searchParams
+  const styleIdStr = params.style
+  
+  if (styleIdStr) {
+    const styleId = parseInt(styleIdStr)
+    const styleObj = stylesData.find(s => s.id === styleId)
+    
+    if (styleObj) {
+      return {
+        title: `Estilo ${styleObj.title}`,
+        description: styleObj.legend,
+        openGraph: {
+          images: [
+            {
+              url: styleObj.image,
+              width: 1200,
+              height: 630,
+              alt: styleObj.title,
+            }
+          ]
+        }
+      }
+    }
+  }
+
+  return {
+    title: 'Catálogo de Modelos Premium',
     description: 'Conheça nossa coleção de modelos de alta performance, desenhados para elevar a presença digital do seu negócio.',
-    url: 'https://catalogo.boxpage.pt/modelos',
-    siteName: 'BoxPage Studio',
-    images: [
-      {
-        url: '/images/screenshot-sites.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Catálogo de Modelos BoxPage Studio',
-      },
-    ],
-    locale: 'pt_PT',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Catálogo de Modelos Premium | BoxPage Studio',
-    description: 'Conheça nossa coleção de modelos de alta performance, desenhados para elevar a presença digital do seu negócio.',
-    images: ['/images/screenshot-sites.jpg'],
-  },
+  }
 }
 
 export const dynamic = 'force-dynamic'

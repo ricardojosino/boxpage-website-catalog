@@ -7,7 +7,7 @@ import Link from 'next/link'
 const steps = [
   { id: 1, name: 'Estilo', label: 'Estilo', path: '/' },
   { id: 2, name: 'Modelos', label: 'Modelos', path: '/modelos' },
-  { id: 3, name: 'Finalizar', label: 'Escolher', path: '/modelos/' }
+  { id: 3, name: 'Finalizar', label: 'Escolher', path: '/modelos/tema/' }
 ]
 
 interface StepperProps {

@@ -11,9 +11,10 @@ interface StyleCardProps {
   legend: string
   audience: string
   image: string
+  priority?: boolean
 }
 
-export default function StyleCard({ id, title, legend, audience, image }: StyleCardProps) {
+export default function StyleCard({ id, title, legend, audience, image, priority = false }: StyleCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -30,6 +31,7 @@ export default function StyleCard({ id, title, legend, audience, image }: StyleC
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority={priority}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
             <span className="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider">

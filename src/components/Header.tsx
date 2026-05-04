@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Search, Menu, X, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import { Search, Menu, X, ArrowRight, Palette } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import stylesData from '@/data/styles.json'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,16 +26,21 @@ export default function Header() {
       {/* Desktop Header Content (>= 1200px) */}
       <div className="hidden xl:flex boxed-container h-14 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold tracking-tighter text-primary">
-            BOXPAGE<span className="text-foreground">STUDIO</span>
-          </span>
+          <Image 
+            src="/images/boxpage-logo-mini.png" 
+            alt="BoxPage Studio" 
+            width={140} 
+            height={40} 
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         <form onSubmit={handleSearch} className="relative w-full max-w-md group">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground group-focus-within:text-primary transition-colors" />
           <input
             type="text"
-            placeholder="Pesquise por código ou nome do modelo"
+            placeholder="Pesquise por nome do modelo"
             className="w-full h-11 pl-11 pr-12 rounded-full bg-secondary/40 border border-white/10 hover:border-white/20 focus:bg-secondary/60 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 text-sm transition-all placeholder:text-muted-foreground/40"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -49,7 +56,7 @@ export default function Header() {
 
         <nav className="flex items-center gap-8 text-sm font-medium">
           <Link href="/" className="hover:text-primary transition-colors">Início</Link>
-          <Link href="https://boxpage.pt" target="_blank" className="hover:text-primary transition-colors">Site Oficial</Link>
+          <Link href="https://boxpage.pt" target="_blank" rel="noopener" className="hover:text-primary transition-colors">Site Oficial</Link>
         </nav>
       </div>
 
@@ -57,9 +64,14 @@ export default function Header() {
       {/* Mobile/Tablet Header Content (< 1200px) */}
       <div className="xl:hidden full-container h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-tighter text-primary">
-            BOXPAGE<span className="text-foreground text-lg">STUDIO</span>
-          </span>
+          <Image 
+            src="/images/boxpage-logo-mini.png" 
+            alt="BoxPage Studio" 
+            width={120} 
+            height={36} 
+            className="h-7 w-auto"
+            priority
+          />
         </Link>
 
         <button
@@ -73,7 +85,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="xl:hidden fixed inset-0 top-16 z-90 bg-background flex flex-col p-6 animate-in slide-in-from-top duration-300">
+        <div className="xl:hidden fixed inset-0 top-16 z-90 bg-background flex flex-col p-6 animate-in slide-in-from-right duration-300 overflow-y-auto">
           <div className="flex flex-col gap-8 h-full">
             <form onSubmit={handleSearch} className="relative w-full">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-primary" />
@@ -94,6 +106,27 @@ export default function Header() {
             </form>
 
             <nav className="flex flex-col gap-1 w-full">
+              <div className="flex items-center gap-2 px-2 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary/60">
+                <Palette className="h-3 w-3" />
+                Estilos
+              </div>
+              <div className="grid grid-cols-1 gap-1 mb-4">
+                {stylesData.map((style) => (
+                  <Link
+                    key={style.id}
+                    href={`/modelos?style=${style.id}`}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between py-3 px-4 bg-white/5 hover:bg-white/10 rounded-xl transition-colors active:scale-98"
+                  >
+                    <span className="text-sm font-bold tracking-tight">{style.title}</span>
+                    <ArrowRight className="h-3 w-3 opacity-40" />
+                  </Link>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-2 px-2 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary/60 mt-2">
+                Navegação
+              </div>
               {[
                 { label: 'Início', href: '/' },
                 { label: 'Site Oficial', href: 'https://boxpage.pt', external: true },
@@ -103,8 +136,9 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener" : undefined}
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between py-4 px-2 hover:bg-white/5 rounded-xl transition-colors active:scale-98"
+                  className="flex items-center justify-between py-4 px-4 hover:bg-white/5 rounded-xl transition-colors active:scale-98"
                 >
                   <span className="text-lg font-bold tracking-tight">{link.label}</span>
                   <X className="h-4 w-4 rotate-45 opacity-20" />

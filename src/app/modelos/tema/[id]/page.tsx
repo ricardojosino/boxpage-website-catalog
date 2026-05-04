@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: ModelDetailPageProps): Promis
 
   if (!model) return {}
 
-  const title = `${model.title} | BoxPage Studio`
+  const title = `Modelo ${model.title}`
   const description = model.legend
 
   return {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: ModelDetailPageProps): Promis
     openGraph: {
       title,
       description,
-      url: `https://catalogo.boxpage.pt/modelos/${id}`,
+      url: `https://catalogo.boxpage.pt/modelos/tema/${id}`,
       siteName: 'BoxPage Studio',
       images: [
         {

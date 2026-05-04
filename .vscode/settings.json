@@ -1,0 +1,26 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.enabled": false,
+    "explorer.confirmPasteNative": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.compactFolders": false,
+    "explorer.copyPathSeparator": "/",
+    "explorer.copyRelativePathSeparator": "/",
+    "explorer.confirmDelete": false,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.showTabIndex": true,
+    "window.openFilesInNewWindow": "on",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "workbench.editor.enablePreview": false,
+    "editor.rename.enablePreview": false,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.rename.enablePreview"
+    ],
+    "explorer.autoReveal": "focusNoScroll",
+     "workbench.editor.wrapTabs": true
+}
