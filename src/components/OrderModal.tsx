@@ -31,38 +31,39 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
  
-  // Helper para ler cookies no browser
+  // Helper robusto para ler cookies
   const getCookie = (name: string) => {
     if (typeof document === 'undefined') return null
-    const value = `; ${document.cookie}`
-    const parts = value.split(`; ${name}=`)
-    if (parts.length === 2) {
-      const content = parts.pop()?.split(';').shift()
-      return content ? decodeURIComponent(content) : null
-    }
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'))
+    if (match) return decodeURIComponent(match[2])
     return null
   }
 
-  // Carregar dados (Cookie ou localStorage) ao abrir o modal
+  // 1. Carregar dados iniciais (Cookie ou localStorage) assim que o componente monta no cliente
+  useEffect(() => {
+    const cookieData = getCookie('boxpage_user_data')
+    const localData = localStorage.getItem('boxpage_user_data')
+    const savedData = cookieData || localData
+    
+    if (savedData) {
+      try {
+        const parsed = JSON.parse(savedData)
+        setFormData({
+          name: parsed.name || '',
+          email: parsed.email || '',
+          phone: parsed.phone || '',
+          company: parsed.company || ''
+        })
+      } catch (e) {
+        console.error("Erro ao carregar dados persistentes:", e)
+      }
+    }
+  }, [])
+
+  // 2. Controlar abertura/fecho e scroll
   useEffect(() => {
     if (isOpen) {
-      // Tenta ler do Cookie primeiro (mais fiável para cross-domain), depois localStorage
-      const savedData = getCookie('boxpage_user_data') || localStorage.getItem('boxpage_user_data')
-      
-      if (savedData) {
-        try {
-          const parsed = JSON.parse(savedData)
-          setFormData(prev => ({
-            ...prev,
-            name: parsed.name || prev.name,
-            email: parsed.email || prev.email,
-            phone: parsed.phone || prev.phone,
-            company: parsed.company || prev.company
-          }))
-        } catch (e) {
-          console.error("Erro ao carregar dados persistentes", e)
-        }
-      }
+      setStep('form')
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
