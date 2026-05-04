@@ -63,13 +63,13 @@ Link: ${modelLink}`
       message: `
         <p>Olá, ${clientFirstName},</p>
         <p>Espero que esteja bem.</p>
-        <p>Confirmo que recebemos a sua escolha do modelo de site através do nosso catálogo. É um ótimo ponto de partida para o nosso projeto!</p>
+        <p>Confirmo que recebemos a sua escolha do modelo de site através do nosso catálogo. É um ótimo ponto de partida para o seu novo site!</p>
         <p><strong>Modelo: ${modelTitle}</strong></p>
         <p><strong>Próximos Passos:</strong></p>
-        <p>Para darmos sequência, o próximo passo fundamental é a preparação do conteúdo que será inserido no site (textos, fotos, logotipos e informações de contato). Ter esse material organizado é o que garantirá a agilidade na montagem da estrutura.</p>
-        <p>Em breve, entrarei em contato com você para alinharmos os detalhes dessa entrega e darmos continuidade ao desenvolvimento.</p>
-        <p>Se tiver qualquer dúvida por enquanto, sigo à disposição.</p>
-        <p>Fico a disposição,<br><strong>Daiani Josino | BoxPage</strong></p>
+        <p>Para darmos seguimento, o próximo passo fundamental é a preparação do conteúdo que será inserido no site (textos, fotos, logotipos e informações de contacto). Ter este material organizado garantirá a agilidade na montagem da estrutura.</p>
+        <p>Em breve, entrarei em contacto consigo para alinharmos os detalhes desta entrega e darmos continuidade ao desenvolvimento.</p>
+        <p>Se tiver qualquer dúvida por agora, sigo à disposição.</p>
+        <p>Com os melhores cumprimentos,<br><strong>Daiani | BoxPage</strong></p>
       `
     }
 
