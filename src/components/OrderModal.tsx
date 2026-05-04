@@ -31,15 +31,43 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
  
-  // Bloquear e liberar o scroll do body conforme o modal abre e fecha
+  // Helper para ler cookies no browser
+  const getCookie = (name: string) => {
+    if (typeof document === 'undefined') return null
+    const value = `; ${document.cookie}`
+    const parts = value.split(`; ${name}=`)
+    if (parts.length === 2) {
+      const content = parts.pop()?.split(';').shift()
+      return content ? decodeURIComponent(content) : null
+    }
+    return null
+  }
+
+  // Carregar dados (Cookie ou localStorage) ao abrir o modal
   useEffect(() => {
     if (isOpen) {
+      // Tenta ler do Cookie primeiro (mais fiável para cross-domain), depois localStorage
+      const savedData = getCookie('boxpage_user_data') || localStorage.getItem('boxpage_user_data')
+      
+      if (savedData) {
+        try {
+          const parsed = JSON.parse(savedData)
+          setFormData(prev => ({
+            ...prev,
+            name: parsed.name || prev.name,
+            email: parsed.email || prev.email,
+            phone: parsed.phone || prev.phone,
+            company: parsed.company || prev.company
+          }))
+        } catch (e) {
+          console.error("Erro ao carregar dados persistentes", e)
+        }
+      }
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
     }
  
-    // Cleanup ao desmontar
     return () => {
       document.body.style.overflow = 'unset'
     }
@@ -63,6 +91,20 @@ export default function OrderModal({ isOpen, onClose, model, style }: OrderModal
       })
 
       if (result.success) {
+        const userData = JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company
+        })
+
+        // Gravar no localStorage (local)
+        localStorage.setItem('boxpage_user_data', userData)
+
+        // Gravar no Cookie (partilhado entre subdomínios .boxpage.pt)
+        // Validade de 1 ano, domínio abrangente
+        document.cookie = `boxpage_user_data=${encodeURIComponent(userData)}; domain=.boxpage.pt; path=/; max-age=31536000; SameSite=Lax`
+
         setStep('success')
       } else {
         alert(result.error || 'Ocorreu um erro ao enviar o seu pedido. Por favor, tente novamente.')
