@@ -143,6 +143,17 @@
     "link": "https://boxpage-website-catalog--moderno-vribrante--neon.vercel.app/"
   },
   {
+    "id": 943187,
+    "style_id": 5,
+    "title": "Vogue",
+    "legend": "Estética editorial com layout assimétrico e cores vibrantes para manicuras e nail artists que vendem design, exclusividade e tendência.",
+    "description": "O modelo Vogue foi desenhado para as profissionais de unhas que não se limitam a fazer manicuras, mas sim a criar obras de arte. Inspirado no design visual arrojado das revistas de moda internacionais, este layout utiliza grandes títulos e fotografias macro impactantes para transformar o site numa declaração de estilo pessoal. É a escolha ideal para nail artists avançadas e salões de luxo que desejam posicionar o seu trabalho como um acessório de moda indispensável, atraindo um público que valoriza a singularidade, a sofisticação e a expressão pessoal através dos detalhes das unhas.",
+    "image": "https://boxpage-website-catalog--moderno-vribrante--vogue.vercel.app/images/screenshot.jpg",
+    "typography": "Serifada de 'Alta Costura' (estilo Didot) para títulos de grande escala, contrastando com uma sans-serif geométrica limpa para o corpo de texto, evocando o layout de uma revista de luxo.",
+    "vibe": "Sofisticação arrojada, atitude fashion e vanguarda. Uma estética editorial com iluminação dramática de estúdio, foco macro extremo em texturas e cores, e um layout assimétrico que respira design autoral.",
+    "link": "https://boxpage-website-catalog--moderno-vribrante--vogue.vercel.app/"
+  },
+  {
     "id": 581932,
     "style_id": 5,
     "title": "Pop",
